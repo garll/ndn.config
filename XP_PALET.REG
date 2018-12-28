@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Console]
+"ColorTable00"=dword:00000000
+"ColorTable01"=dword:00a80000
+"ColorTable02"=dword:0000a800
+"ColorTable03"=dword:00a8a800
+"ColorTable04"=dword:000000a8
+"ColorTable05"=dword:00a800a8
+"ColorTable06"=dword:000054a8
+"ColorTable07"=dword:00a8a8a8
+"ColorTable08"=dword:00545454
+"ColorTable09"=dword:00fc5454
+"ColorTable10"=dword:0054fc54
+"ColorTable11"=dword:00fcfc54
+"ColorTable12"=dword:005454fc
+"ColorTable13"=dword:00fc54fc
+"ColorTable14"=dword:0054fcfc
+"ColorTable15"=dword:00fcfcfc
+"CursorSize"=dword:00000019
+"FaceName"="Terminal"
+"FontFamily"=dword:00000030
+"FontSize"=dword:0012000a
+"FontWeight"=dword:00000190
+"FullScreen"=dword:00000000
+"HistoryBufferSize"=dword:00000032
