@@ -1449,21 +1449,21 @@ FILES *.pas;*.res;*.dfm
   BracketPairs object;record;dialog;begin;case;asm;try;item end ifdef;ifndef endif repeat until if then while;for;with do then;case else for;repeat;while break for to;downto procedure;function;constructor;destructor begin;var interface implementation
   KeyWords Color Brown absolute,inherited,IFNDEF,
   KeyWords Color Red for,repeat,while,to,downto,do,try,except,finally,with,until,
-  KeyWords1 ioresult,halt,create
+  KeyWords1 ioresult,halt,create,done
   KeyWords1 nosound,keypressed,readkey,
   KeyWords1 PackTime,SetFTime,break,
   KeyWords1 getintvec,paramcount,ClrScr
   KeyWords2 asm,assembler,graphResult,begin,end,private,public,record,forward
   KeyWords3 virtual,close,reset,rewrite,append,assign,showmessage,gotoxy,name,external,stdcall,
   KeyWords3 inc,dec,mod,div,paramstr,sizeof,textColor,abs,chr,ord,
-  KeyWords3 FileSize,eof,INTTOSTR,strtoint,seek,Gettime,getdate
+  KeyWords3 FileSize,eof,INTTOSTR,strtoint,seek,Gettime,getdate,packed
   KeyWords3 str,read,readln,upcase,nil,hint,label
   KeyWords4 char,byte,boolean,string,word,longint,integer,array,pointer,registers,real,file,text,int64,double,bool,
   KeyWords4 DateTime,DWord,PChar,ShortString,SmallWord,smallint,AnsiString,
-  KeyWords4 TObject,TField,set,EventTimer,TQuad,THandle,PView,PFilesCollection,PMyScrollBar,THideView,PHideView,TFPFilter,PDrive,TPoint,TQuickSearchData,TStream,
-  KeyWords4 TMemoryStatus,TEvent,TView,TCollection,TGroup,PDialog,Trect,PString,PFileRec,PDirStorage,PSortedCollection,TSwapLevel,PStream,TStoredFile,TListBox,
+  KeyWords4 TObject,TField,set,EventTimer,TQuad,THandle,PView,PFilesCollection,PMyScrollBar,THideView,PHideView,TFPFilter,PDrive,TPoint,TQuickSearchData,TStream,PButton,TTextListBoxRec
+  KeyWords4 TMemoryStatus,TEvent,TView,TCollection,TGroup,PDialog,Trect,PString,PFileRec,PDirStorage,PSortedCollection,TSwapLevel,PStream,TStoredFile,TListBox,PCollection,
   KeyWords4 true,false,pguid,longbool,TGUID,uInt,LONG,cardinal,WCHAR,
-  KeyWords5 implementation,interface,type,program,uses,var,const,procedure,function,unit,
+  KeyWords5 implementation,interface,type,program,uses,var,const,procedure,function,unit,cm.*
   KeyWords6 then,else,if,idok,SubMenu,continue,
   KeyWords6 clear,of,case,destructor,constructor,object,item,exit,initialization,finalization,
   KeyWords7 lines,sql,text,caption,items,AsString,filename,result
