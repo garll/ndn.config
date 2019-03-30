@@ -1453,7 +1453,7 @@ FILES *.pas;*.res;*.dfm
   KeyWords1 nosound,keypressed,readkey,
   KeyWords1 PackTime,SetFTime,break,
   KeyWords1 getintvec,paramcount,ClrScr
-  KeyWords2 asm,assembler,graphResult,begin,end,private,public,record,forward
+  KeyWords2 asm,assembler,graphResult,begin,end,private,public,record,forward,protected,
   KeyWords3 virtual,close,reset,rewrite,append,assign,showmessage,gotoxy,name,external,stdcall,
   KeyWords3 inc,dec,mod,div,paramstr,sizeof,textColor,abs,chr,ord,
   KeyWords3 FileSize,eof,INTTOSTR,strtoint,seek,Gettime,getdate,packed
