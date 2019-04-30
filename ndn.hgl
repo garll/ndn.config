@@ -254,6 +254,7 @@ FILES hgroups.ini
  KeyWords Color LightGreen/Magenta     Color=90
  KeyWords Color black/brown            Color=96
 
+ KeyWords Color lightgreen/brown       Color=106
  KeyWords Color Black/DARKGRAY         Color=128
  KeyWords Color BLUE/DARKGRAY          Color=129
  KeyWords Color Green/DARKGRAY         Color=130
