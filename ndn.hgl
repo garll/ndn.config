@@ -1492,12 +1492,13 @@ FILES *.pas;*.res;*.dfm
   RegKeyWords Color LightMagenta \'[^\']+\',\#\d*
   RegKeyWords Color yellow write(ln)?,random(ize)?,
   RegKeyWords Color yellow [a-z]+\^
-  RegKeyWords Color White [^\x22\x27\x20\x2c\x3a\x29\x28\x2e\x3b\x5d]+:
-  RegKeyWords Color White \x20+[^\x22\x27\x20\x3a\x29\x28\x2e\x3b\x5d]:=
+  RegKeyWords Color White [^\x7b\x7d\x22\x27\x20\x2c\x3a\x29\x28\x2e\x3b\x5d]+:
+  RegKeyWords Color White \x20+[^\x7b\x7d\x22\x27\x20\x3a\x29\x28\x2e\x3b\x5d]:=
   RegKeyWords Color White [\w]*\x28
  ; RegKeyWords Color White [\w]*\x5B
   RegKeyWords Color white \x20[\w]*\.
-  RegKeyWords Color White ^[^\x20]+\=
+  RegKeyWords Color White ^[^\x20\x7b\x7d]+\=
+  RegKeyWords color black \{[^\x7d]+\x7d
 
   Comment (* *),{  }
   CommentString //
