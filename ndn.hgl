@@ -489,7 +489,7 @@ FILES config.sys;*.bat;*.col;*.cmd;
 
  ; Comment [ ]
   commentstart ;
-  RegKeyWords Color  white/green \:[^\x20]+
+  RegKeyWords Color  white/green \:[^\x20\x3a]+
   RegKeyWords Color  black \[[^\[]*30m
   RegKeyWords Color  LightRed \[[^\[]*31m
   RegKeyWords Color  Green \[[^\[]*32m
@@ -1491,6 +1491,11 @@ FILES *.pas;*.res;*.dfm
   RegKeyWords Color Lightgreen \d+h
   RegKeyWords Color LightMagenta \'[^\']+\',\#\d*
   RegKeyWords Color yellow write(ln)?,random(ize)?,
+  RegKeyWords color white SetFileAttributesA
+  RegKeyWords Color blue lSetFdwAttr,lGetFdwAttr,GetFiledwAttr,setFiledwAttr,GetFilePSsize
+  RegKeyWords Color green lSetFAttr,lGetFAttr,GetFileAttr,setFileAttr
+  RegKeyWords Color lightred SetFAttr
+
   RegKeyWords Color yellow [a-z]+\^
   RegKeyWords Color White [^\x7b\x7d\x22\x27\x20\x2c\x3a\x29\x28\x2e\x3b\x5d]+:
   RegKeyWords Color White \x20+[^\x7b\x7d\x22\x27\x20\x3a\x29\x28\x2e\x3b\x5d]:=
