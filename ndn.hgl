@@ -1503,7 +1503,7 @@ FILES *.pas;*.res;*.dfm
  ; RegKeyWords Color White [\w]*\x5B
   RegKeyWords Color white \x20[\w]*\.
   RegKeyWords Color White ^[^\x20\x7b\x7d]+\=
-  RegKeyWords color black \{[^\x7d]+\x7d
+  RegKeyWords color black \{[\$][^\x7d]+\x7d
 
   Comment (* *),{  }
   CommentString //
