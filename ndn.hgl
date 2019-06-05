@@ -1460,7 +1460,7 @@ FILES *.pas;*.res;*.dfm
   KeyWords3 FileSize,eof,INTTOSTR,strtoint,seek,Gettime,getdate,packed
   KeyWords3 str,read,readln,upcase,nil,hint,label
   KeyWords4 char,byte,boolean,string,word,longint,integer,array,pointer,registers,real,file,text,int64,double,bool,
-  KeyWords4 DateTime,DWord,PChar,ShortString,SmallWord,smallint,AnsiString,TInputLine,TComboBox
+  KeyWords4 DateTime,DWord,PChar,ShortString,SmallWord,smallint,AnsiString,TInputLine,TComboBox,TDriveType,lfile
   KeyWords4 TObject,TField,set,EventTimer,TQuad,THandle,PView,PFilesCollection,PMyScrollBar,THideView,PHideView,TFPFilter,PDrive,TPoint,TQuickSearchData,TStream,PButton,TTextListBoxRec,TListViewer
   KeyWords4 TMemoryStatus,TEvent,TView,TCollection,TGroup,PDialog,Trect,PString,PFileRec,PDirStorage,PSortedCollection,TSwapLevel,PStream,TStoredFile,TListBox,PCollection,PLabel,PInputLine,PWhileView,
   KeyWords4 true,false,pguid,longbool,TGUID,uInt,LONG,cardinal,WCHAR,
