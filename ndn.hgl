@@ -1455,7 +1455,7 @@ FILES *.pas;*.res;*.dfm
   KeyWords1 PackTime,SetFTime,break,
   KeyWords1 getintvec,paramcount,ClrScr
   KeyWords2 asm,assembler,graphResult,begin,end,private,public,record,forward,protected,
-  KeyWords3 virtual,close,reset,rewrite,append,assign,showmessage,gotoxy,name,external,stdcall,
+  KeyWords3 virtual,close,reset,rewrite,append,assign,showmessage,gotoxy,name,external,stdcall,default,cdecl,fastcal,
   KeyWords3 inc,dec,mod,div,paramstr,sizeof,textColor,abs,chr,ord,
   KeyWords3 FileSize,eof,INTTOSTR,strtoint,seek,Gettime,getdate,packed
   KeyWords3 str,read,readln,upcase,nil,hint,label
@@ -1464,7 +1464,7 @@ FILES *.pas;*.res;*.dfm
   KeyWords4 TObject,TField,set,EventTimer,TQuad,THandle,PView,PFilesCollection,PMyScrollBar,THideView,PHideView,TFPFilter,PDrive,TPoint,TQuickSearchData,TStream,PButton,TTextListBoxRec,TListViewer
   KeyWords4 TMemoryStatus,TEvent,TView,TCollection,TGroup,PDialog,Trect,PString,PFileRec,PDirStorage,PSortedCollection,TSwapLevel,PStream,TStoredFile,TListBox,PCollection,PLabel,PInputLine,PWhileView,
   KeyWords4 true,false,pguid,longbool,TGUID,uInt,LONG,cardinal,WCHAR,
-  KeyWords5 implementation,interface,type,program,uses,var,const,procedure,function,unit,cm.*
+  KeyWords5 implementation,interface,type,program,uses,var,const,procedure,function,unit,cm.*,property
   KeyWords6 then,else,if,idok,SubMenu,continue,
   KeyWords6 clear,of,case,destructor,constructor,object,item,exit,initialization,finalization,
   KeyWords7 lines,sql,text,caption,items,AsString,filename,result
