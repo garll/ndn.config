@@ -569,7 +569,7 @@ FILES *.PL, *.PM, *.SH, *.SUB;*.MU;
   Keywords2 chomp,chop,index,lc,length,sprintf,substr,uc
   Keywords2 localtime,gmtime,time,pack,unpack,vec,chr,ord,hex,ord
   Keywords3 $_,@_,$!
-  RegKeywords COLOR LightBlue \$\d+
+  RegKeywords COLOR Blue \$\d+
   RegKeywords COLOR Yellow \$([a-zA-Z][_a-zA-Z\d]*|_[_a-zA-Z\d]+)
   RegKeywords COLOR LightMagenta @([a-zA-Z][_a-zA-Z\d]*|_[_a-zA-Z\d]+)
   RegKeywords COLOR LightCyan [_a-zA-Z\d]+ *(?==>)
