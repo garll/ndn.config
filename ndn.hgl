@@ -552,7 +552,7 @@ FILES *.PL, *.PM, *.SH, *.SUB;*.MU;
   GeneralFlags 81
   StringFlags 131
   MultilineComment 1
-  CommentString #
+  CommentStart #
   Comment __END__ a_unique_string_because_there_is_no_end_of_such_comment
   Keywords1 cmp,eq,gt,lt,ne,and,not,or,xor
   Keywords1 continue,do,else,elsif,for,foreach,goto,if,last,next,return,
@@ -1097,77 +1097,6 @@ END
 ;
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
-; Nasm/Fasm/Tasm/Assembler FILES *.S35;*.S03;*.S01;*.S90 (MenetOS)
-FILES *.ASM;*.lst;*.inc;
- CommentString ;
- CommentStart ;
- Generalflags 16
- HexNumFLAGS 63
- BINNUMFLAGS 1
- KeyWords Color Black 0x40
- KeyWords Color lightcyan int,int01,
- KeyWords Color Green or,xor,xadd,fadd,add,not,inc,dec,div,
- KeyWords Color white/red proc,endp,if,endif,while,endw,elseif,else,ifdef,ifndef,elif
- KeyWords Color white/green nop
- KeyWords Color brown macro,endm,struc,segment,ends,
- KeyWords Color lightgreen *
- KeyWords1 org,dec,cmp,and,shl,xor,rep,in,lidt,lgdt,cpuid,cl,cld,btc,
- KeyWords1 sub,Imul,stosd,xchg,adc,ror,out,ltr,wrmsr,rdmsr,sti,
- KeyWords1 lea,rdtsc,equ,neg,lds,rcl,lodsb,rol,daa,lahf,aas,fldz,fchs,
- KeyWords1 invoke,local,fld,fstp,fsub,fild,btr,bts,bt,cwd,
- KeyWords1 ends,end,les,sar,sal,rcr,retn,fcmovnb,enter,lsl,
- KeyWords1 repz,std,setz,mov,mul,movzx,repne,sbb,lar,aam,stos,
- KeyWords1 insb,xlat,stosb,outsb,shld,setc,clc,stc,movsb,movsw,
- KeyWords1 proto,assume,lodsw,entry,arg,stosw,cli,cbw,bound,
- KeyWords1 repnz,into,lock,loopz,setalc,arpl,insw,outsw,fmul,MovSEG,
- KeyWords1 fimul,fiadd,fwait,fldcw,fnstcw,aad,leave,hlt,movsx,
- KeyWords1 fcompp,fnstsw,sahf,sldt,setnz,scasw,scasb,cmpsb,cmpsw,insd,
- KeyWords1 das,fcomp,fcmovu,cmc,fistp,fcmovnu,scasd,iretd,cwde,cdq,
- KeyWords1 movsd,cmpsd,lodsd,fcmovnbe,outsd,BSET,BTST,LD,BRES,DOS,
- KeyWords1 sgdt,sidt,repe,arrow,lss,
- KeyWords1 fdivr,idiv,fdiv,ficomp,fisub,fucomi,fidiv,fist,
- KeyWords2 label,near,
- KeyWords3 al,ah,bl,bh,cl,ch,dl,dh,di,si
- KeyWords3 ax,bx,cx,dx
- KeyWords3 as,bs,cs,ds,es,sp,ss,esi,
- KeyWords3 eax,ebx,ecx,edx,esi,edi,EBP,ESP,BP
- KeyWords3 Include,use,uses,use32,includelib,target,caption,public,model,code,
- KeyWords4 test,
- KeyWords5 je,jz,jl,jc,jle,jecxz,jb,ja,jg,jge,jbe,jno,jp,jna,jexcz,jnae,
- KeyWords5 jmp,jnle,jne,jnc,jnz,jnl,jnb,jae,jcxz,js,jns,jnp,jo,jnge,jng,jmpe
- KeyWords5 dq,dt,tiny,large,word,dword,byte,ptr,jumps,
- KeyWords6 stack,dup,ret,call,loope,loopnz,loop,clr,
- KeyWords7 iret,retf,fsubp
- KeyWords8 byte,exit,db,dw,dd,bigword,string,data,dataseg,
- RegKeyWords Color White shr.?,
- RegKeyWords Color Lightgreen (\x20|^)[^\[\x20]*\:,
-; RegKeyWords Color Green (\x20,.?div,
- RegKeyWords Color blue nop\x20
- RegKeyWords Color LightRed pop[^\20\[\;]+
- RegKeyWords Color LightRed push[^\20\[\;]+
- RegKeyWords Color Lightcyan \d+h,@[^\x20]*
- RegKeyWords Color Lightcyan \[,\]
-  Macro 1
-    GoToX 0
-    InsLine
-    Print ';ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ'^M^S
-    Print ';'^M^S
-    Print ';'^M^S
-    Print ';'^M^S
-    Print ';ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ'^M^S
-    Print ^X^E^E^E^E^D^D
-  EndMacro
-  Macro 2
-    GotoX 0
-    InsLine
-    Print ';'^M^S
-    Print ';'^M^S
-    Print ';'^M^S
-    Print ^X^E^G^E^E^D^D
-  EndMacro
-
-END
-;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ;FILES *.LST
 ; CommentString ;
 ; CommentStart ;
@@ -1446,7 +1375,7 @@ FILES *.prg;*.qpr;*.sql
 END
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; ” ฉซ๋  แแช ซ๏/ํซไจ (ฎข ๏ เฅค ชๆจ๏) * pascal/Delphi (New Edition)
-FILES *.pas;*.res;*.dfm
+FILES *.pas;*.res;*.dfm;stdefine.inc
   BracketPairs object;record;dialog;begin;case;asm;try;item end ifdef;ifndef endif repeat until if then while;for;with do then;case else for;repeat;while break for to;downto procedure;function;constructor;destructor begin;var interface implementation
   KeyWords Color Brown absolute,inherited,IFNDEF,
   KeyWords Color Red for,repeat,while,to,downto,do,try,except,finally,with,until,
@@ -1576,6 +1505,79 @@ FILES *.pas;*.res;*.dfm
   EndMacro
 
 END
+
+;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+; Nasm/Fasm/Tasm/Assembler FILES *.S35;*.S03;*.S01;*.S90 (MenetOS)
+FILES *.ASM;*.lst;*.inc;
+ CommentString ;
+ CommentStart ;
+ Generalflags 16
+ HexNumFLAGS 63
+ BINNUMFLAGS 1
+ KeyWords Color Black 0x40
+ KeyWords Color lightcyan int,int01,
+ KeyWords Color Green or,xor,xadd,fadd,add,not,inc,dec,div,
+ KeyWords Color white/red proc,endp,if,endif,while,endw,elseif,else,ifdef,ifndef,elif
+ KeyWords Color white/green nop
+ KeyWords Color brown macro,endm,struc,segment,ends,
+ KeyWords Color lightgreen *
+ KeyWords1 org,dec,cmp,and,shl,xor,rep,in,lidt,lgdt,cpuid,cl,cld,btc,
+ KeyWords1 sub,Imul,stosd,xchg,adc,ror,out,ltr,wrmsr,rdmsr,sti,
+ KeyWords1 lea,rdtsc,equ,neg,lds,rcl,lodsb,rol,daa,lahf,aas,fldz,fchs,
+ KeyWords1 invoke,local,fld,fstp,fsub,fild,btr,bts,bt,cwd,
+ KeyWords1 ends,end,les,sar,sal,rcr,retn,fcmovnb,enter,lsl,
+ KeyWords1 repz,std,setz,mov,mul,movzx,repne,sbb,lar,aam,stos,
+ KeyWords1 insb,xlat,stosb,outsb,shld,setc,clc,stc,movsb,movsw,
+ KeyWords1 proto,assume,lodsw,entry,arg,stosw,cli,cbw,bound,
+ KeyWords1 repnz,into,lock,loopz,setalc,arpl,insw,outsw,fmul,MovSEG,
+ KeyWords1 fimul,fiadd,fwait,fldcw,fnstcw,aad,leave,hlt,movsx,
+ KeyWords1 fcompp,fnstsw,sahf,sldt,setnz,scasw,scasb,cmpsb,cmpsw,insd,
+ KeyWords1 das,fcomp,fcmovu,cmc,fistp,fcmovnu,scasd,iretd,cwde,cdq,
+ KeyWords1 movsd,cmpsd,lodsd,fcmovnbe,outsd,BSET,BTST,LD,BRES,DOS,
+ KeyWords1 sgdt,sidt,repe,arrow,lss,
+ KeyWords1 fdivr,idiv,fdiv,ficomp,fisub,fucomi,fidiv,fist,
+ KeyWords2 label,near,
+ KeyWords3 al,ah,bl,bh,cl,ch,dl,dh,di,si
+ KeyWords3 ax,bx,cx,dx
+ KeyWords3 as,bs,cs,ds,es,sp,ss,esi,
+ KeyWords3 eax,ebx,ecx,edx,esi,edi,EBP,ESP,BP
+ KeyWords3 Include,use,uses,use32,includelib,target,caption,public,model,code,
+ KeyWords4 test,
+ KeyWords5 je,jz,jl,jc,jle,jecxz,jb,ja,jg,jge,jbe,jno,jp,jna,jexcz,jnae,
+ KeyWords5 jmp,jnle,jne,jnc,jnz,jnl,jnb,jae,jcxz,js,jns,jnp,jo,jnge,jng,jmpe
+ KeyWords5 dq,dt,tiny,large,word,dword,byte,ptr,jumps,
+ KeyWords6 stack,dup,ret,call,loope,loopnz,loop,clr,
+ KeyWords7 iret,retf,fsubp
+ KeyWords8 byte,exit,db,dw,dd,bigword,string,data,dataseg,
+ RegKeyWords Color White shr.?,
+ RegKeyWords Color Lightgreen (\x20|^)[^\[\x20]*\:,
+; RegKeyWords Color Green (\x20,.?div,
+ RegKeyWords Color blue nop\x20
+ RegKeyWords Color LightRed pop[^\20\[\;]+
+ RegKeyWords Color LightRed push[^\20\[\;]+
+ RegKeyWords Color Lightcyan \d+h,@[^\x20]*
+ RegKeyWords Color Lightcyan \[,\]
+  Macro 1
+    GoToX 0
+    InsLine
+    Print ';ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ'^M^S
+    Print ';'^M^S
+    Print ';'^M^S
+    Print ';'^M^S
+    Print ';ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ'^M^S
+    Print ^X^E^E^E^E^D^D
+  EndMacro
+  Macro 2
+    GotoX 0
+    InsLine
+    Print ';'^M^S
+    Print ';'^M^S
+    Print ';'^M^S
+    Print ^X^E^G^E^E^D^D
+  EndMacro
+
+END
+
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; Delphi,Pascal source / ” ฉซ๋  แแช ซ๏/ํซไจ
 FILES *.int;*.bi
