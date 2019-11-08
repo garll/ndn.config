@@ -1514,7 +1514,7 @@ END
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; Nasm/Fasm/Tasm/Assembler FILES *.S35;*.S03;*.S01;*.S90 (MenetOS)
 FILES *.ASM;*.lst;*.inc;
- CommentString // ;
+ CommentString //
  CommentStart // ;
  Generalflags 16
  HexNumFLAGS 63
@@ -1556,6 +1556,7 @@ FILES *.ASM;*.lst;*.inc;
  KeyWords8 byte,exit,db,dw,dd,bigword,string,data,dataseg,
  RegKeyWords Color White shr.?,
  RegKeyWords Color Lightgreen (\x20|^)[^\[\x20]*\:,
+  RegKeyWords color black \{[\$][^\x7d]+\x7d
 ; RegKeyWords Color Green (\x20,.?div,
  RegKeyWords Color blue nop\x20
  RegKeyWords Color LightRed pop[^\20\[\;]+

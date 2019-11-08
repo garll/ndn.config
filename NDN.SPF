@@ -8,6 +8,8 @@
 ; Example:
 ;
  [pas,inc]
-.
+.;../;../../;
 ; *c:\bp\inc\;c:\my\src
 ; i:\bp\inc\
+[pp,PP]
+.;../;
