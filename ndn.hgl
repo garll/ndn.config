@@ -1425,7 +1425,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp
   RegKeyWords color white SetFileAttributesA
   RegKeyWords Color lightred SetFAttr
   RegKeyWords Color blue lSetFdwAttr,lGetFdwAttr,GetFiledwAttr,setFiledwAttr,GetFilePSsize,lGetLinuxAttr,lSetLinuxAttr
-  RegKeyWords Color green lSetFAttr,lGetFAttr,GetFileAttr,setFileAttr,getfilestmode,setfilestmode
+  RegKeyWords Color green lSetFAttr,lGetFAttr,GetFileAttr,setFileAttr,getfilestmode,setfilestmode,lnxSetFileFlags,lnxGetFileFlags
 
 
 
