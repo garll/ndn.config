@@ -1374,6 +1374,7 @@ FILES *.prg;*.qpr;*.sql
  Commentstring &&
  Comment  (* *)
 END
+
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; ” ฉซ๋  แแช ซ๏/ํซไจ (ฎข ๏ เฅค ชๆจ๏) * pascal/Delphi (New Edition)
 FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp
@@ -1511,6 +1512,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp
   EndMacro
 
 END
+
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; Nasm/Fasm/Tasm/Assembler FILES *.S35;*.S03;*.S01;*.S90 (MenetOS)
@@ -2211,6 +2213,20 @@ FILES params.txt,GetUrlScript.txt
 
 END
 
+;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+;
+FILES *.yml
+ Switchhighlight On;
+ CommentString #
+
+ KeyWords color Lightgreen true
+
+ RegKeyWords color lightcyan -.*
+ RegKeyWords color lightgreen .*\:
+ RegKeyWords color black \{[^\x7d]+\x7d
+
+END
+
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; Text file and any Others
@@ -2313,6 +2329,7 @@ FILES *.txt;*.faq;*.*;*.php
   EndMacro
 
 END
+
 
 
 ;ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
