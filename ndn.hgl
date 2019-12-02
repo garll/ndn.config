@@ -570,6 +570,8 @@ FILES *.PL, *.PM, *.SH, *.SUB;*.MU;
   Keywords2 chomp,chop,index,lc,length,sprintf,substr,uc
   Keywords2 localtime,gmtime,time,pack,unpack,vec,chr,ord,hex,ord
   Keywords3 $_,@_,$!
+  KeyWords6 sudo
+  KeyWords8 yum,dpkg,apt
   RegKeywords COLOR Blue \$\d+
   RegKeywords COLOR Yellow \$([a-zA-Z][_a-zA-Z\d]*|_[_a-zA-Z\d]+)
   RegKeywords COLOR LightMagenta @([a-zA-Z][_a-zA-Z\d]*|_[_a-zA-Z\d]+)
@@ -2221,8 +2223,8 @@ FILES *.yml
 
  KeyWords color Lightgreen true
 
- RegKeyWords color lightcyan -.*
- RegKeyWords color lightgreen .*\:
+ RegKeyWords color lightcyan (\x20+|^)-.*
+ RegKeyWords color lightgreen ([a-z\_])*\:(\x20|$)
  RegKeyWords color black \{[^\x7d]+\x7d
 
 END
@@ -2246,7 +2248,7 @@ FILES *.txt;*.faq;*.*;*.php
 ; 1c keywords
 ;KeyWords6 КонецЕсли,КонецЦикла,Если,Пока,Для,Тогда,Прервать,ИначеЕсли,
  KeyWords Color LightBlue ftp,url,
- KeyWords Color Lightcyan ******
+ KeyWords Color Lightcyan ******,default,truncate
  KeyWords Color cyan *,GetUrlScriptFName,
 ;,#,$,%,^,&,=,-,\,|,?,
  KeyWords Color white ■,
@@ -2269,7 +2271,6 @@ FILES *.txt;*.faq;*.*;*.php
  RegKeyWords Color Lightcyan [-a-z_\d]+@[-a-z_\d\x2e]+[-a-z\d]+
  RegKeyWords Color Lightcyan [\x20|^][\-a-z]+:{1}\x5c
  RegKeyWords Color Lightcyan [^\>]*
-; " Name>"
 
  RegKeyWords2 .[█-▀]+,.[░-▓]+
  RegKeyWords2 \<[^\x5E\>\<\x22\x27\x3D]+\>,\[[^\x5E\]\[\x22\x27\x3D]+\],\([^\x5E\)\(\x22\x27\x3D]+\),\{[^\x5E\}\{\x22\x27\x3D]+\}
@@ -2282,8 +2283,8 @@ FILES *.txt;*.faq;*.*;*.php
  RegKeyWords5 [_a-ў-\d*]+\x2e\*?(dll|ocx|drv|sys|hlp|dbf)(\x20|\;|\,|$)+
  RegKeyWords6 [_a-ў-\d*]+\x2e\*?(bak|err|tmp)(\x20|\;|\,|$)+
  RegKeyWords Color Magenta [_a-ў-\d*]+\x2e*.\*?(doc(x)?|xls(x)?|mdb|dot)(\x20|\;|\,|$)+
- RegKeyWords Color Brown        [_a-ў-\d*]+\x2e\*?(ini|vwr|edt|ext|hgl|mnu|s|des|md|phn|grp|dfm|xrn|spf)(\x20|\;|\,|$)+
- RegKeyWords Color cyan         [_a-ў-\d*]+\x2e\*?(pas|cpp|bas)(\x20|\;|\,|$)+
+ RegKeyWords Color Brown   [_a-ў-\d*]+\x2e\*?(ini|vwr|edt|ext|hgl|mnu|s|des|md|phn|grp|dfm|xrn|spf)(\x20|\;|\,|$)+
+ RegKeyWords Color cyan    [_a-ў-\d*]+\x2e\*?(pas|cpp|bas)(\x20|\;|\,|$)+
 ;//END Highlite files and extensions like in my HGROUPS.INI
  RegKeyWords6 (Alt|Ctrl|Shift)((\x2d|\x2b).(\x20|$|\x2e|\x2c))+
  RegKeyWords6 F(1+[012]?|[2-9]),
