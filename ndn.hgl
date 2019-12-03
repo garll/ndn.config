@@ -476,7 +476,7 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh,
   KeyWords2 break,cd,del,rename,if,exist,call,buffers,FILES,errorlevel,fi,for,case,while,in
   KeyWords3 pause,@pause,chkerrorlevel
   KeyWords4 esac,do,done
-  KeyWords6 exit,chmod,rm
+  KeyWords6 exit,chmod,rm,unshare
   keywords7 ALLUSERSPROFILE,APPDATA,ClusterLog,CommonProgramFiles,COMPUTERNAME,ComSpec,FP_NO_HOST_CHECK,HOMEDRIVE,HOMEPATH,LOGONSERVER,NUMBER_OF_PROCESSORS,OS,Path,PATHEXT,PROCESSOR_ARCHITECTURE,
   keywords7 PROCESSOR_IDENTIFIER,PROCESSOR_LEVEL,PROCESSOR_REVISION,ProgramFiles,PROMPT,SBSSERVER,SESSIONNAME,SystemDrive,SystemRoot,TEMP,TMP,USERDNSDOMAIN,USERDOMAIN,USERNAME,USERPROFILE,windir,
 
@@ -2222,12 +2222,20 @@ END
 ;
 FILES *.yml
  Switchhighlight On;
+ BracketPairs try except
+
  CommentString #
 
- KeyWords color Lightgreen true
+ keywords1 print,
+ keywords4 def,
+ keywords4 def,
+ keywords7 return, except as
 
+ KeyWords color lightred true,false
+
+ RegKeyWords color white [\-\._a-z0-9]+\(
  RegKeyWords color lightcyan ((\x20+|^)-).*
- RegKeyWords color lightgreen (([^\x32]-)|([a-z]))+\:(\x20|$)
+ RegKeyWords color lightgreen (([^\x32]-)|([a-z_0-9]))+\:(\x20|$)
  RegKeyWords color black \{[^\x7d]+\x7d
 
 END
