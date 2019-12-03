@@ -2223,8 +2223,8 @@ FILES *.yml
 
  KeyWords color Lightgreen true
 
- RegKeyWords color lightcyan (\x20+|^)-.*
- RegKeyWords color lightgreen ([a-z\_])*\:(\x20|$)
+ RegKeyWords color lightcyan ((\x20+|^)-).*
+ RegKeyWords color lightgreen (([^\x32]-)|([a-z]))+\:(\x20|$)
  RegKeyWords color black \{[^\x7d]+\x7d
 
 END
