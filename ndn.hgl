@@ -442,9 +442,11 @@ END
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; Batch FILES
-FILES config.sys;*.bat;*.col;*.cmd;
+FILES config.sys;*.bat;*.col;*.cmd;*.sh,
 
-  CommentStart ;
+  CommentStart ;,#
+  BracketPairs if fi case esac do done
+
 ;RegKeyWords comment
   RegKeyWords color cyan ^\s*(rem|;).*$
 ;RegKeyWords1
@@ -468,12 +470,13 @@ FILES config.sys;*.bat;*.col;*.cmd;
   KeyWords1 prompt,path,bat,com,exe,
   KeyWords1 z,device,devicehight,tmp,temp,md,
   KeyWords1 himem,mode,not,shift,comspec,cmdline,blaster,winbootdir,windir,
-  KeyWords1 Start,
+  KeyWords1 Start,function
   KeyWords2 %1,%2,%3,%4,%5,%6,%7,%8,%9,%10,:,goto,hight,
   KeyWords2 dos,set,lh,config,menudefault,menuColor,numlock,lastdrive,sys,
-  KeyWords2 break,cd,del,rename,if,exist,call,buffers,FILES,errorlevel,
-  KeyWords3 pause,@pause,
-  KeyWords6 exit,
+  KeyWords2 break,cd,del,rename,if,exist,call,buffers,FILES,errorlevel,fi,for,case,while,in
+  KeyWords3 pause,@pause,chkerrorlevel
+  KeyWords4 esac,do,done
+  KeyWords6 exit,chmod,rm
   keywords7 ALLUSERSPROFILE,APPDATA,ClusterLog,CommonProgramFiles,COMPUTERNAME,ComSpec,FP_NO_HOST_CHECK,HOMEDRIVE,HOMEPATH,LOGONSERVER,NUMBER_OF_PROCESSORS,OS,Path,PATHEXT,PROCESSOR_ARCHITECTURE,
   keywords7 PROCESSOR_IDENTIFIER,PROCESSOR_LEVEL,PROCESSOR_REVISION,ProgramFiles,PROMPT,SBSSERVER,SESSIONNAME,SystemDrive,SystemRoot,TEMP,TMP,USERDNSDOMAIN,USERDOMAIN,USERNAME,USERPROFILE,windir,
 
@@ -549,7 +552,7 @@ END
 
 ;ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
 ; PERL files: GENERALFLAGS = case sensitive + C numbers
-FILES *.PL, *.PM, *.SH, *.SUB;*.MU;
+FILES *.PL, *.PM, *.SUB;*.MU;
   GeneralFlags 81
   StringFlags 131
   MultilineComment 1
