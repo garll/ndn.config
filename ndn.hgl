@@ -2235,7 +2235,7 @@ FILES *.go
  keywords2 package,defer,type
  KeyWords3 var,main,const,switch,case,default,fallthrough,
  KeyWords4 char,pointer,array,bool,string,uint,uintptr,byte,rune,float32,float64,complex64,complex128,
- KeyWords4 len,cap,int,make
+ KeyWords4 len,cap,int,make,append
  KeyWords5 func,return,struct
  keywords5 import,
  keywords6 false,true
