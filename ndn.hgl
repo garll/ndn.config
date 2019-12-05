@@ -496,9 +496,10 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh;*.d
   RegKeyWords Color Yellow -[A-Z]*\x20
   KeyWords color Yellow server,sbserver,tsa,tsc,tsm,
 
- ; Comment [ ]
+; Comment [ ]
   commentstart ;
-  RegKeyWords Color  white/green \:[^\x20\x3a]+
+  RegKeyWords Color  white/green \:[^\x20\x3a]+$
+  RegKeyWords Color  Lightcyan (http|ftp)[a-z]?:[^\x20:>"]+,www\.[^\x20]+,[a-z_\d]+@[a-z_\d]+\x2e[a-z\d]+
   RegKeyWords Color  black \[[^\[]*30m
   RegKeyWords Color  LightRed \[[^\[]*31m
   RegKeyWords Color  Green \[[^\[]*32m
