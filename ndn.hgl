@@ -442,7 +442,7 @@ END
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; Batch FILES
-FILES config.sys;*.bat;*.col;*.cmd;*.sh,
+FILES config.sys;*.bat;*.col;*.cmd;*.sh;*.d
 
   CommentStart ;
   CommentString #
@@ -476,11 +476,13 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh,
   KeyWords2 %1,%2,%3,%4,%5,%6,%7,%8,%9,%10,:,goto,hight,
   KeyWords2 dos,set,lh,config,menudefault,menuColor,numlock,lastdrive,sys,
   KeyWords2 break,cd,del,rename,if,exist,call,buffers,FILES,errorlevel,fi,for,while,in,else,case,esac,then,elif
-  KeyWords3 pause,@pause,chkerrorlevel
+  KeyWords3 pause,@pause,chkerrorlevel,sudo
   KeyWords4 do,done,
-  KeyWords6 exit,chmod,rm,unshare,cat,file,grep,umask,mv,sed,mkfs,exec,iconv
+  KeyWords6 exit,chmod,rm,unshare,cat,file,grep,umask,mv,sed,mkfs,exec,iconv,
+  KeyWords6 daemon,killproc,
   keywords7 ALLUSERSPROFILE,APPDATA,ClusterLog,CommonProgramFiles,COMPUTERNAME,ComSpec,FP_NO_HOST_CHECK,HOMEDRIVE,HOMEPATH,LOGONSERVER,NUMBER_OF_PROCESSORS,OS,Path,PATHEXT,PROCESSOR_ARCHITECTURE,
   keywords7 PROCESSOR_IDENTIFIER,PROCESSOR_LEVEL,PROCESSOR_REVISION,ProgramFiles,PROMPT,SBSSERVER,SESSIONNAME,SystemDrive,SystemRoot,TEMP,TMP,USERDNSDOMAIN,USERDOMAIN,USERNAME,USERPROFILE,windir,
+  KeyWords5 yum,dpkg,apt,apt-get
   RegKeyWords color lightcyan \$\{([a-z0-9])+\}
 
   RegKeyWords Color green >.*
@@ -2222,6 +2224,29 @@ FILES params.txt,GetUrlScript.txt
 
 END
 
+;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+;GoLang
+FILES *.go
+ Switchhighlight On;
+ BracketPairs func return
+
+ keywords1 Printf,Println,print,printSlice,
+ keywords2 package,defer,type
+ KeyWords3 var,main,const,switch,case,default,fallthrough,
+ KeyWords4 char,pointer,array,bool,string,uint,uintptr,byte,rune,float32,float64,complex64,complex128,
+ KeyWords4 len,cap,int
+ KeyWords5 func,return,struct
+ keywords5 import,
+ keywords6 false,true
+
+ RegKeyWords3 (\*|\&)([a-z]+),
+ RegKeyWords3 \[(([0-9])+\:([0-9])+)+\],\[\]
+
+ RegKeyWords4 (u)?int(8|16|32|64|128)+
+
+; RegKeyWords color white [\-\._a-z0-9]+\(
+
+end;
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ;
 FILES *.yml
