@@ -444,7 +444,8 @@ END
 ; Batch FILES
 FILES config.sys;*.bat;*.col;*.cmd;*.sh,
 
-  CommentStart ;,#
+  CommentStart ;
+  CommentString #
   BracketPairs if fi case esac do done
 
 ;RegKeyWords comment
@@ -454,6 +455,7 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh,
   RegKeyWords color white ^\s*(buffers|fcbs|files|install|stacks)(high)?\s*(?==)
   RegKeyWords color white ^\s*device(high)?(?=.*=)
   RegKeyWords color white ^\s*set(?=\s*\D.*=)
+  RegKeyWords color white [\-\._a-z0-9]+\(
   KeyWords2 on,off,high,low,umb,noumb,auto,noauto
 ;menu commands
 ;RegKeyWords1
@@ -473,12 +475,13 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh,
   KeyWords1 Start,function
   KeyWords2 %1,%2,%3,%4,%5,%6,%7,%8,%9,%10,:,goto,hight,
   KeyWords2 dos,set,lh,config,menudefault,menuColor,numlock,lastdrive,sys,
-  KeyWords2 break,cd,del,rename,if,exist,call,buffers,FILES,errorlevel,fi,for,case,while,in
+  KeyWords2 break,cd,del,rename,if,exist,call,buffers,FILES,errorlevel,fi,for,while,in,else,case,esac,then,elif
   KeyWords3 pause,@pause,chkerrorlevel
-  KeyWords4 esac,do,done
-  KeyWords6 exit,chmod,rm,unshare
+  KeyWords4 do,done,
+  KeyWords6 exit,chmod,rm,unshare,cat,file,grep,umask,mv,sed,mkfs,exec,iconv
   keywords7 ALLUSERSPROFILE,APPDATA,ClusterLog,CommonProgramFiles,COMPUTERNAME,ComSpec,FP_NO_HOST_CHECK,HOMEDRIVE,HOMEPATH,LOGONSERVER,NUMBER_OF_PROCESSORS,OS,Path,PATHEXT,PROCESSOR_ARCHITECTURE,
   keywords7 PROCESSOR_IDENTIFIER,PROCESSOR_LEVEL,PROCESSOR_REVISION,ProgramFiles,PROMPT,SBSSERVER,SESSIONNAME,SystemDrive,SystemRoot,TEMP,TMP,USERDNSDOMAIN,USERDOMAIN,USERNAME,USERPROFILE,windir,
+  RegKeyWords color lightcyan \$\{([a-z0-9])+\}
 
   RegKeyWords Color green >.*
   CommentString REM , ::
@@ -658,7 +661,7 @@ FILES *.htm?;*.asx;*.htt;*.htm
  Commentstart //
  Comment <! >
  MultiLineComment 200
- BracketPairs <td>,</td>
+ BracketPairs <td> </td>
 
 end
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
@@ -2229,7 +2232,7 @@ FILES *.yml
 
  keywords1 print,
  keywords4 def,
- keywords4 def,
+ keywords5 make,maven,ant,gradle,bazel,grunt,gulp,build,rake,a-a-p,scons,bitbake,cake,asdf,cabal
  keywords7 return, except as
 
  KeyWords color lightred true,false
