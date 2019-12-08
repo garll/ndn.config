@@ -479,7 +479,7 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh;*.d
   KeyWords3 pause,@pause,chkerrorlevel,sudo
   KeyWords4 do,done,
   KeyWords6 exit,chmod,rm,unshare,cat,file,grep,umask,mv,sed,mkfs,exec,iconv,read
-  KeyWords6 daemon,killproc,wget,curl,mkdir,install,snap,
+  KeyWords6 daemon,killproc,wget,curl,mkdir,install,snap,make,
   keywords7 ALLUSERSPROFILE,APPDATA,ClusterLog,CommonProgramFiles,COMPUTERNAME,ComSpec,FP_NO_HOST_CHECK,HOMEDRIVE,HOMEPATH,LOGONSERVER,NUMBER_OF_PROCESSORS,OS,Path,PATHEXT,PROCESSOR_ARCHITECTURE,
   keywords7 PROCESSOR_IDENTIFIER,PROCESSOR_LEVEL,PROCESSOR_REVISION,ProgramFiles,PROMPT,SBSSERVER,SESSIONNAME,SystemDrive,SystemRoot,TEMP,TMP,USERDNSDOMAIN,USERDOMAIN,USERNAME,USERPROFILE,windir,
   KeyWords5 yum,dpkg,apt,apt-get
@@ -491,7 +491,7 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh;*.d
   KeyWords Color BLUE protshell,ifs=,priority_disk_io,devinfo,libpath,basedev
   KeyWords Color BLUE memman,os2_shell,dpath,keys,codepage
   RegKeyWords Color LightCyan [^\x20=\;\,]*:*\x5c
-  RegKeyWords Color LightCyan [a-z_\d]+\.(exe|com|bat)
+  RegKeyWords Color LightCyan [a-z_\d\-]+\.(exe|com|bat|deb)
   RegKeyWords Color black/red \x7c
   RegKeyWords Color Yellow -[A-Z]*\x20
   KeyWords color Yellow server,sbserver,tsa,tsc,tsm,
@@ -2250,7 +2250,7 @@ FILES *.go
 end;
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ;
-FILES *.yml
+FILES *.yml;*.yaml
  Switchhighlight On;
  BracketPairs try except
 
