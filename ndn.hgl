@@ -476,10 +476,11 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh;*.d
   KeyWords2 %1,%2,%3,%4,%5,%6,%7,%8,%9,%10,:,goto,hight,
   KeyWords2 dos,set,lh,config,menudefault,menuColor,numlock,lastdrive,sys,
   KeyWords2 break,cd,del,rename,if,exist,call,buffers,FILES,errorlevel,fi,for,while,in,else,case,esac,then,elif,
-  KeyWords3 pause,@pause,chkerrorlevel,sudo
-  KeyWords4 do,done,
+  KeyWords3 pause,@pause,chkerrorlevel,sudo,title,localhost
+  KeyWords4 do,done,taskkill,subst,icacls,net,ping,
   KeyWords6 exit,chmod,rm,unshare,cat,file,grep,umask,mv,sed,mkfs,exec,iconv,read
   KeyWords6 daemon,killproc,wget,curl,mkdir,install,snap,make,
+  keywords6 shutdown,reboot,
   keywords7 ALLUSERSPROFILE,APPDATA,ClusterLog,CommonProgramFiles,COMPUTERNAME,ComSpec,FP_NO_HOST_CHECK,HOMEDRIVE,HOMEPATH,LOGONSERVER,NUMBER_OF_PROCESSORS,OS,Path,PATHEXT,PROCESSOR_ARCHITECTURE,
   keywords7 PROCESSOR_IDENTIFIER,PROCESSOR_LEVEL,PROCESSOR_REVISION,ProgramFiles,PROMPT,SBSSERVER,SESSIONNAME,SystemDrive,SystemRoot,TEMP,TMP,USERDNSDOMAIN,USERDOMAIN,USERNAME,USERPROFILE,windir,
   KeyWords5 yum,dpkg,apt,apt-get
@@ -1198,7 +1199,7 @@ FILES *.VBS;*.BAS;*.FRM
   KeyWords5 read,data,
   KeyWords7 MsgBox,call,chr,cos,sin,log
   KeyWords Color Yellow Goto,Gosub,Return,
-  RegKeyWords Color black \D*\x20
+;  RegKeyWords Color black \D*\x20
   CommentString REM ,'
   BracketPairs  begin end if then for to
   StringFlags 32
