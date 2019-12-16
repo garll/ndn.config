@@ -499,8 +499,8 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh;*.d
 
 ; Comment [ ]
   commentstart ;
-  RegKeyWords Color  white/green \:[^\x20\x3a]+$
-  RegKeyWords Color  Lightcyan (http|ftp)[a-z]?:[^\x20:>"]+,www\.[^\x20]+,[a-z_\d]+@[a-z_\d]+\x2e[a-z\d]+
+  RegKeyWords Color  white/green ^((\x20)+)?\:[^\x20\x3a\/]+$
+   RegKeyWords Color Lightcyan (http|ftp)[a-z]?:[^\x20:>"]+,www\.[^\x20]+,[a-z_\d]+@[a-z_\d]+\x2e[a-z\d]+
   RegKeyWords Color  black \[[^\[]*30m
   RegKeyWords Color  LightRed \[[^\[]*31m
   RegKeyWords Color  Green \[[^\[]*32m
@@ -2320,7 +2320,7 @@ FILES *.txt;*.faq;*.*;*.php
  RegKeyWords2 [_a-÷-\d*]+\x2e\*?(ace|ain|arc|arj|bsa|bs2|cab|chz|ha|hap|hpk|hyp|lha|lim|qrk|rar|sqz|tar|uc2|ufa|zip|zoo|zxz|is3|7z|tgz|lzh)(\x20|\;|\,|$)+
  RegKeyWords Color Lightblue    [_a-÷-\d*]+\x2e(\*)?(gif|jpg|png|bmp|wmf|mp3|wav|mid|kar|mod|xm)(\x20|\;|\,|$)+
  RegKeyWords Color Blue         [_a-÷-\d*]+\x2e\*?(avi|mp4|mov|vob|mpg|asf)(\x20|\;|\,|$)+
- RegKeyWords4 [_a-÷-\d*]+\x2e\*?(com|exe|cmd|pif|bat|lnk)(\x20|\;|\,|$)+
+ RegKeyWords4 [_a-÷-\d*]+\x2e\*?(com|exe|cmd|pif|bat|sh|lnk)(\x20|\;|\,|$)+
  RegKeyWords7 [_a-÷-\d*]+\x2e\*?(txt|lst|rus|diz|me|pdf|rtf)(\x20|\;|\,|$)+
  RegKeyWords5 [_a-÷-\d*]+\x2e\*?(dll|ocx|drv|sys|hlp|dbf)(\x20|\;|\,|$)+
  RegKeyWords6 [_a-÷-\d*]+\x2e\*?(bak|err|tmp)(\x20|\;|\,|$)+
