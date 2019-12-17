@@ -2265,9 +2265,10 @@ FILES *.yml;*.yaml
  KeyWords color lightred true,false
 
  RegKeyWords color white [\-\._a-z0-9]+\(
- RegKeyWords color lightcyan ((\x20+|^)-)([^\:#])*
+ RegKeyWords color lightcyan ^((\x20+)-)([^{\:#\"])*
+ RegKeyWords Color Lightcyan (http|ftp)[a-z]?:[^\x20:>"]+,www\.[^\x20]+,[a-z_\d]+@[a-z_\d]+\x2e[a-z\d]+
  RegKeyWords color lightgreen (([^\x32]-)|([a-z_0-9]))+\:(\x20|$)
- RegKeyWords color black \{[^\x7d]+\x7d
+ RegKeyWords color black \{\{[^\x7d]+\x7d\}
 
 END
 
