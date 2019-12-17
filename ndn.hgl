@@ -2265,7 +2265,7 @@ FILES *.yml;*.yaml
  KeyWords color lightred true,false
 
  RegKeyWords color white [\-\._a-z0-9]+\(
- RegKeyWords color lightcyan ((\x20+|^)-).*
+ RegKeyWords color lightcyan ((\x20+|^)-)([^\:#])*
  RegKeyWords color lightgreen (([^\x32]-)|([a-z_0-9]))+\:(\x20|$)
  RegKeyWords color black \{[^\x7d]+\x7d
 
