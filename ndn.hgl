@@ -1408,7 +1408,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp
   KeyWords4 TMemoryStatus,TEvent,TView,TCollection,TGroup,PDialog,Trect,PString,PFileRec,PDirStorage,PSortedCollection,TSwapLevel,PStream,TStoredFile,TListBox,PCollection,PLabel,PInputLine,PWhileView,
   KeyWords4 true,false,pguid,longbool,TGUID,uInt,LONG,cardinal,WCHAR,LongWord
   KeyWords5 implementation,interface,type,program,uses,var,const,procedure,function,unit,cm.*,property
-  KeyWords6 then,else,if,idok,SubMenu,continue,
+  KeyWords6 then,else,if,idok,SubMenu,continue,in
   KeyWords6 clear,of,case,destructor,constructor,object,item,exit,initialization,finalization,
   KeyWords7 lines,sql,text,caption,items,AsString,filename,result,
   KeyWords8 and,not,or,Goto,init,fail
