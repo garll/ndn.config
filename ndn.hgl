@@ -468,17 +468,17 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh;*.d
 ;RegKeyWords1
   RegKeyWords color white ^\s*(echoconfig|ntcmdpropt|dosonly|emm\s*(?==))
 
-  KeyWords1 copy,echo,echo.,@echo,cls,include,
+  KeyWords1 copy,echo,echo.,@echo,cls,include,xcopy,robocopy
   KeyWords1 prompt,path,bat,com,exe,
   KeyWords1 z,device,devicehight,tmp,temp,md,
   KeyWords1 himem,mode,not,shift,comspec,cmdline,blaster,winbootdir,windir,
   KeyWords1 Start,function
   KeyWords2 %1,%2,%3,%4,%5,%6,%7,%8,%9,%10,:,goto,hight,
   KeyWords2 dos,set,lh,config,menudefault,menuColor,numlock,lastdrive,sys,
-  KeyWords2 break,cd,del,rename,if,exist,call,buffers,FILES,errorlevel,fi,for,while,in,else,case,esac,then,elif,
+  KeyWords2 break,cd,rename,if,exist,call,buffers,FILES,errorlevel,fi,for,while,in,else,case,esac,then,elif,
   KeyWords3 pause,@pause,chkerrorlevel,sudo,title,localhost
   KeyWords4 do,done,taskkill,subst,icacls,net,ping,
-  KeyWords6 exit,chmod,rm,unshare,cat,file,grep,umask,mv,sed,mkfs,exec,iconv,read
+  KeyWords6 exit,chmod,rm,unshare,cat,file,grep,umask,mv,sed,mkfs,exec,iconv,read,del
   KeyWords6 daemon,killproc,wget,curl,mkdir,install,snap,make,
   keywords6 shutdown,reboot,
   keywords7 ALLUSERSPROFILE,APPDATA,ClusterLog,CommonProgramFiles,COMPUTERNAME,ComSpec,FP_NO_HOST_CHECK,HOMEDRIVE,HOMEPATH,LOGONSERVER,NUMBER_OF_PROCESSORS,OS,Path,PATHEXT,PROCESSOR_ARCHITECTURE,
