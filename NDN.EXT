@@ -1950,7 +1950,24 @@ uha {@uharcd.exe l !.! *.*
     >4 ~2~ В текущий
     @pkunzip -e -o -d ~!.!~
 @rem - - - - - - - - - - - - - - - - - - - - - -
->2 ~*.ZOO~ (C) 1991 v2.1   Rachul Dhesi                 64
+>2 ~*.ZPQ~ (C) 2016 v7.15  journaling archiver          64
+
+  >3 ~1~ Запаковать
+  @zpaq a !.zpq !.!
+  >3
+  >3 ~-~ Распаковать ..
+   >4 ~1~ В каталог "!"
+   md !
+   copy !.! ! >NUL
+   cd !
+   @zpaq x !.!
+   del !.!
+   cd ..
+   >4 ~2~ В текущий
+   @zpaq x !.!
+
+@rem - - - - - - - - - - - - - - - - - - - - - -
+>2 ~*.ZOO~ (C) 1991 v2.1   Rachul Dhesi                 65
   >3 ~1~ Запаковать
   @zoo -a !.zoo !.!
   >3
