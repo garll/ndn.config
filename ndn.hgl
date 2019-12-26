@@ -2277,7 +2277,7 @@ END
 ; Text file and any Others
 FILES *.txt;*.faq;*.*;*.php
  KeyWords1 KeyWords1,Freeware,password,caption,left,right,open,close,IP,
- KeyWords2 KeyWords2,Area,Msg,Date,Read,Replied,Mark,copy,move,cut,paste
+ KeyWords2 KeyWords2,Area,Msg,Date,Read,Replied,Mark,copy,move,cut,paste,clipboard,
  KeyWords3 KeyWords3,RegKeyWords,KeyWords,Necromancer,Dos,Navigator,Dn,ndn,unix,linux,os/2,Macintosh,amiga,apple,ReactOS,freebsd
  KeyWords3 TileRLeft,TileRTop,TileRRight,TileRBottom
  KeyWords3 дос,навигатор,Millennium,Edition,Xp,BeOS,ATARI,menuet,meos,menuetos,d32,w9x,w32,lnx,mda,
