@@ -72,7 +72,7 @@ FILES *.htx;*.dnl;*.dnr;
 
   CommentStart ;
   OptimalFill Off
-  KeyWords1 dialog,COMMAND,MenuLine,Button,MENU,StaticText,ITEM,StatusItem,MenuItem,Menubox,
+  KeyWords1 dialog,COMMAND,MenuLine,Button,MENU,StaticText,ITEM,StatusItem,MenuItem,Menubox,scrolldialog,
   KeyWords2 topic,STATICTEXT
   KeyWords3 RadioButtons,RadioButtonsE,CheckBoxes,CheckBoxesE,ColorGroup,ColorItem,SCROLLBAR,ListBox,ListBoxE,Label,
   KeyWords3 MouseSCROLLBAR,IntInputLine,InputLine,CommonRect,DriveCheckBoxes,end,UpperTable,HEXLINE,ComboBox,BUTTON,CheckedComboBox,
