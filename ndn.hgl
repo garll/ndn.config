@@ -1413,7 +1413,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   KeyWords7 lines,sql,text,caption,items,AsString,filename,result,
   KeyWords8 and,not,or,Goto,init,fail
 
-  RegKeyWords4 \@[^\x20\,)]+
+  RegKeyWords4 \@[^\x20\,\{)]+
 ; bad style code formatting highlite
 ;  RegKeyWords Color black/red \x20(\,|\;)
 ;  RegKeyWords Color black/red [^\x20]?\<\>[^\x20]
