@@ -1,12 +1,5 @@
-; Alt-F3 extract arhive at name directory
-zip : md "!" | "C:\Program Files\WinRAR\WinRAR.exe" x "!.!" "!"
-zmp : md "!" | "C:\Program Files\WinRAR\WinRAR.exe" x "!.!" "!"
-rar : md "!" | rar x ~!.!~ *.* "!"
-arj : md ~! | arj x ~!.!~ ~! *.* | Ren ~! !
-ace : md ~! | call ace x ~!.!~ *.* ~! | Ren ~! "!"
-acl : md ~! | call ace x ~!.!~ *.* ~! | Ren ~! "!"
-lha : md ~! | lha x /~! ~!.!~ *.* | Ren ~! !
-7z  : md ~! | 7z x -o~! ~!.!~ *.* | Ren ~! !
+; Alt-F3
+
 
 ;----- DisAsembler -----
 ;exe : Qview ~!.!~
