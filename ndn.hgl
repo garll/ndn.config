@@ -2252,10 +2252,15 @@ end;
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ;
 FILES *.py
- keywords3 print,
- keywords2 len,
- keywords4 def,
- KeyWords6 while,
+ Switchhighlight On;
+ BracketPairs def return if else
+
+ CommentStart #
+ keywords5 def,return,dict,
+ keywords2 len,max,min
+ keywords3 type,
+ keywords4 print,
+ KeyWords6 while,for,in,if,else
 
 end;
 
