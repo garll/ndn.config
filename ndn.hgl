@@ -2251,6 +2251,16 @@ FILES *.go
 end;
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ;
+FILES *.py
+ keywords3 print,
+ keywords2 len,
+ keywords4 def,
+ KeyWords6 while,
+
+end;
+
+;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+;
 FILES *.yml;*.yaml
  Switchhighlight On;
  BracketPairs try except
