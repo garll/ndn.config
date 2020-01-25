@@ -2253,10 +2253,10 @@ end;
 ;
 FILES *.py
  Switchhighlight On;
- BracketPairs def return if else
+ BracketPairs def return if else for in
 
  CommentStart #
- keywords5 def,return,dict,
+ keywords5 def,return,dict,from,import,
  keywords2 len,max,min
  keywords3 type,
  keywords4 print,
