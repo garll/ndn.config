@@ -1413,6 +1413,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   KeyWords7 lines,sql,text,caption,items,AsString,filename,result,
   KeyWords8 and,not,or,Goto,init,fail
 
+  keywords color blue bfdefault
   RegKeyWords4 \@[^\x20\,\{)]+
 ; bad style code formatting highlite
 ;  RegKeyWords Color black/red \x20(\,|\;)
@@ -2291,16 +2292,19 @@ END
 ;ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
 ; Text file and any Others
 FILES *.txt;*.faq;*.*;*.php
- KeyWords1 KeyWords1,Freeware,password,caption,left,right,open,close,IP,
+
+ KeyWords1 KeyWords1,Freeware,password,caption,left,right,open,close,IP,IAC,
  KeyWords2 KeyWords2,Area,Msg,Date,Read,Replied,Mark,copy,move,cut,paste,clipboard,
- KeyWords3 KeyWords3,RegKeyWords,KeyWords,Necromancer,Dos,Navigator,Dn,ndn,unix,linux,os/2,Macintosh,amiga,apple,ReactOS,freebsd
+ KeyWords3 KeyWords3,RegKeyWords,KeyWords,Necromancer,Dos,Navigator,Dn,ndn,unix,linux,os/2,Macintosh,amiga,apple,ReactOS,freebsd,,
+ KeyWords3 VMware,vcentre,docker,ansible,OS2,DOS,QNX,windows
  KeyWords3 TileRLeft,TileRTop,TileRRight,TileRBottom
  KeyWords3 ¤®á,­ ¢¨£ â®à,Millennium,Edition,Xp,BeOS,ATARI,menuet,meos,menuetos,d32,w9x,w32,lnx,mda,
  KeyWords3 Based,Rit,Hex,Asm,Dump,Text,Bin,Ascii,Xlt,Koi,organization,ICQ,Pack,Unpack,AIM,,
  KeyWords5 KeyWords5,IDE,SCSI,LFN,cr,lf,crlf,RealName,CacheType,sfn,description,fullname,xfs,btrfs,GUID,
  KeyWords6 KeyWords6,PgUp,PgDn,Home,Del,Ins,BackSp,Backspace,End,Esc,Enter,Grayplus,Minus,Tilda,Space,Caps,Lock,Begin,Up,Down,delete,insert,Tab,Alt,Ctrl,Shift,error
- KeyWords7 KeyWords7,Ext,
- KeyWords8 KeyWords8,Origin,
+ KeyWords6 highload,stop,start
+ KeyWords7 KeyWords7,Ext,result,
+ KeyWords8 KeyWords8,Origin,etc,
  KeyWords8 USER,PASS,ACCT,CWD,CDUP,SMNT,QUIT,REIN,PORT,PASV,TYPE,STRU,MODE,RETR,STOR,STOU,APPE,
  KeyWords8 ALLO,REST,RNFR,RNTO,ABOR,DELE,RMD,MKD,PWD,LIST,NLST,SITE,SYST,STAT,HELP,NOOP,FEAT,
 ; 1c keywords
@@ -2319,9 +2323,9 @@ FILES *.txt;*.faq;*.*;*.php
 
  RegKeyWords Color white/lightred viru[a-ï_-]*
  RegKeyWords Color LightMagenta fat(\d{2})?,ntfs,
- RegKeyWords3 win(dow(s)?)?(\x27|\x20)?(\d+X?)?(xp)?(nt)?(me)?(\x2e11)?,
- RegKeyWords3 OS2,DOS,QNX,
- RegKeyWords3 ~[^~\x5c\x21]+~,(((s(uper)?)?v)|[ec])ga,DPMI(32)?
+; RegKeyWords3 win(dow(s)?)?(\x27|\x20)?(\d+X?)?(xp)?(nt)?(me)?(\x2e11)?,
+ RegKeyWords3 ((dot|asp)|(\.))+net
+ RegKeyWords3 ~[^~\x5c\x21]+~, \x20(((s(uper)?)?v)|[ec])+ga,DPMI(32)?
  RegKeyWords3 [³-Ú]+
  RegKeyWords3 Subj(ect)?,IBM(\x20)?(((pc\x2f?)|(xt\x2f?)|(at\x2f?))+)?
  RegKeyWords Color Lightcyan (http|ftp)[a-z]?:[^\x20:>"]+,www\.[^\x20]+,[a-z_\d]+@[a-z_\d]+\x2e[a-z\d]+
@@ -2340,6 +2344,7 @@ FILES *.txt;*.faq;*.*;*.php
  RegKeyWords7 [_a-÷-\d*]+\x2e\*?(txt|lst|rus|diz|me|pdf|rtf)(\x20|\;|\,|$)+
  RegKeyWords5 [_a-÷-\d*]+\x2e\*?(dll|ocx|drv|sys|hlp|dbf)(\x20|\;|\,|$)+
  RegKeyWords6 [_a-÷-\d*]+\x2e\*?(bak|err|tmp)(\x20|\;|\,|$)+
+ RegKeyWords8 (\w|\/)+\.conf
  RegKeyWords Color Magenta [_a-÷-\d*]+\x2e*.\*?(doc(x)?|xls(x)?|mdb|dot)(\x20|\;|\,|$)+
  RegKeyWords Color Brown   [_a-÷-\d*]+\x2e\*?(ini|vwr|edt|ext|hgl|mnu|s|des|md|phn|grp|dfm|xrn|spf)(\x20|\;|\,|$)+
  RegKeyWords Color cyan    [_a-÷-\d*]+\x2e\*?(pas|cpp|bas)(\x20|\;|\,|$)+
@@ -2349,9 +2354,14 @@ FILES *.txt;*.faq;*.*;*.php
  RegKeyWords6 [^\x20\x3c]+\x3e+.
  RegKeyWords7 [^\x20\x3c]+\x3c+.
  RegKeyWords Color lightGreen [\<]+
+
+
  RegKeyWords1 \d+:\d+:\d+
  RegKeyWords1 ^[^\x20\x3b]+:
  RegKeyWords1 [^\x00-\x2d]*\x28
+
+ RegKeyWords color brown \d+\:\d+(\x20)?(a|p)m
+
 
 ; RegKeyWords Color RED ABC
 ; RegKeyWords Color bLUE qwe
