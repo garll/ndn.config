@@ -2296,11 +2296,11 @@ END
 ; Text file and any Others
 FILES *.txt;*.faq;*.*;*.php
 
- KeyWords1 KeyWords1,Freeware,password,caption,left,right,open,close,IP,IAC,
+ KeyWords1 KeyWords1,Freeware,password,caption,left,right,open,close,IP,IAC,RCPT,
  KeyWords2 KeyWords2,Area,Msg,Date,Read,Replied,Mark,copy,move,cut,paste,clipboard,
  KeyWords3 KeyWords3,RegKeyWords,KeyWords,Necromancer,Dos,Navigator,Dn,ndn,unix,linux,os/2,Macintosh,amiga,apple,ReactOS,freebsd,,
  KeyWords3 VMware,vcentre,docker,ansible,OS2,DOS,QNX,windows
- KeyWords3 TileRLeft,TileRTop,TileRRight,TileRBottom
+ KeyWords3 TileRLeft,TileRTop,TileRRight,TileRBottom,Recipient,sender
  KeyWords3 дос,навигатор,Millennium,Edition,Xp,BeOS,ATARI,menuet,meos,menuetos,d32,w9x,w32,lnx,mda,
  KeyWords3 Based,Rit,Hex,Asm,Dump,Text,Bin,Ascii,Xlt,Koi,organization,ICQ,Pack,Unpack,AIM,,
  KeyWords5 KeyWords5,IDE,SCSI,LFN,cr,lf,crlf,RealName,CacheType,sfn,description,fullname,xfs,btrfs,GUID,
@@ -2308,7 +2308,7 @@ FILES *.txt;*.faq;*.*;*.php
  KeyWords6 highload,stop,start,false,true
  KeyWords7 KeyWords7,Ext,result,
  KeyWords8 KeyWords8,Origin,etc,
- KeyWords8 USER,PASS,ACCT,CWD,CDUP,SMNT,QUIT,REIN,PORT,PASV,TYPE,STRU,MODE,RETR,STOR,STOU,APPE,
+ KeyWords8 USER,PASS,ACCT,CWD,CDUP,SMNT,QUIT,REIN,PORT,PASV,TYPE,STRU,MODE,RETR,STOR,STOU,APPE,EHLO,RSET,DATA
  KeyWords8 ALLO,REST,RNFR,RNTO,ABOR,DELE,RMD,MKD,PWD,LIST,NLST,SITE,SYST,STAT,HELP,NOOP,FEAT,
 ; 1c keywords
 ;KeyWords6 КонецЕсли,КонецЦикла,Если,Пока,Для,Тогда,Прервать,ИначеЕсли,
@@ -2318,7 +2318,7 @@ FILES *.txt;*.faq;*.*;*.php
 ;,#,$,%,^,&,=,-,\,|,?,
  KeyWords Color white ■,
  Keywords color yellow/brown Golden
- KeyWords Color Lightcyan Reply-To:,From:,sender,From,
+ KeyWords Color Lightcyan Reply-To:,From:,From,
  KeyWords Color white/lightred инфицирован,вирус,возможно,Moderator,
  KeyWords Color lightred доступ,файлу,запрещен,удален
  KeyWords Color lightred ошибка
@@ -2354,14 +2354,16 @@ FILES *.txt;*.faq;*.*;*.php
 ;//END Highlite files and extensions like in my HGROUPS.INI
  RegKeyWords6 (Alt|Ctrl|Shift)((\x2d|\x2b).(\x20|$|\x2e|\x2c))+
  RegKeyWords6 F(1+[012]?|[2-9]),
- RegKeyWords6 [^\x20\x3c]+\x3e+.
- RegKeyWords7 [^\x20\x3c]+\x3c+.
+ RegKeyWords6 [^\x20\x3c;,]+\x3e+.
+ RegKeyWords7 [^\x20\x3c;,]+\x3c+.
  RegKeyWords Color lightGreen [\<]+
 
+;2020-04-16T09:00:03.584Z,
+ RegKeyWords1 ^.{23}Z
 
  RegKeyWords1 \d+:\d+:\d+
- RegKeyWords1 ^[^\x20\x3b]+:
- RegKeyWords1 [^\x00-\x2d]*\x28
+ RegKeyWords1 ^[^\x20\x3b,]+:
+; RegKeyWords1 [^\x00-\x2d\=]*\x28
 
  RegKeyWords color brown \d+\:\d+(\x20)?(a|p)m
 
