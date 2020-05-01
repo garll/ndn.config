@@ -1405,6 +1405,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   KeyWords3 FileSize,eof,INTTOSTR,strtoint,seek,Gettime,getdate,packed
   KeyWords3 str,read,readln,upcase,nil,hint,label,
   KeyWords4 char,byte,boolean,string,word,longint,integer,array,pointer,registers,real,file,text,int64,double,bool,PShortString,ansichar,short,
+  KeyWords4 kmascii,kmansi,kmkoi8r,kmutf8,
   KeyWords4 DateTime,DWord,PChar,ShortString,SmallWord,smallint,AnsiString,TInputLine,TComboBox,TDriveType,lfile
   KeyWords4 TObject,TField,set,EventTimer,TQuad,THandle,PView,PFilesCollection,PMyScrollBar,THideView,PHideView,TFPFilter,PDrive,TPoint,TQuickSearchData,TStream,PButton,TTextListBoxRec,TListViewer,
   KeyWords4 TMemoryStatus,TEvent,TView,TCollection,TGroup,PDialog,Trect,PString,PFileRec,PDirStorage,PSortedCollection,TSwapLevel,PStream,TStoredFile,TListBox,PCollection,PLabel,PInputLine,PWhileView,PStaticText,
@@ -1440,7 +1441,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   RegKeyWords Color yellow write(ln)?,random(ize)?,
   RegKeyWords color white SetFileAttributesA
   RegKeyWords Color lightred SetFAttr
-  RegKeyWords Color blue lSetFdwAttr,lGetFdwAttr,GetFiledwAttr,setFiledwAttr,GetFilePSsize,lGetLinuxAttr,lSetLinuxAttr
+  RegKeyWords Color blue lSetFdwAttr,lGetFdwAttr,GetFiledwAttr,setFiledwAttr,GetFilePSsize,lGetLinuxAttr,lSetLinuxAttr,
   RegKeyWords Color green lSetFAttr,lGetFAttr,GetFileAttr,setFileAttr,getfilestmode,setfilestmode,lnxSetFileFlags,lnxGetFileFlags
 
 
