@@ -1405,7 +1405,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   KeyWords3 FileSize,eof,INTTOSTR,strtoint,seek,Gettime,getdate,packed
   KeyWords3 str,read,readln,upcase,nil,hint,label,
   KeyWords4 char,byte,boolean,string,word,longint,integer,array,pointer,registers,real,file,text,int64,double,bool,PShortString,ansichar,short,
-  KeyWords4 kmascii,kmansi,kmkoi8r,kmutf8,
+  KeyWords4 kmascii,kmansi,kmkoi8r,kmutf8,kmUTF7,kmUTF16L,kmUTF16B
   KeyWords4 DateTime,DWord,PChar,ShortString,SmallWord,smallint,AnsiString,TInputLine,TComboBox,TDriveType,lfile
   KeyWords4 TObject,TField,set,EventTimer,TQuad,THandle,PView,PFilesCollection,PMyScrollBar,THideView,PHideView,TFPFilter,PDrive,TPoint,TQuickSearchData,TStream,PButton,TTextListBoxRec,TListViewer,
   KeyWords4 TMemoryStatus,TEvent,TView,TCollection,TGroup,PDialog,Trect,PString,PFileRec,PDirStorage,PSortedCollection,TSwapLevel,PStream,TStoredFile,TListBox,PCollection,PLabel,PInputLine,PWhileView,PStaticText,
@@ -2303,10 +2303,10 @@ FILES *.txt;*.faq;*.*;*.php
  KeyWords3 VMware,vcentre,docker,ansible,OS2,DOS,QNX,windows
  KeyWords3 TileRLeft,TileRTop,TileRRight,TileRBottom,Recipient,sender
  KeyWords3 дос,навигатор,Millennium,Edition,Xp,BeOS,ATARI,menuet,meos,menuetos,d32,w9x,w32,lnx,mda,
- KeyWords3 Based,Rit,Hex,Asm,Dump,Text,Bin,Ascii,Xlt,Koi,organization,ICQ,Pack,Unpack,AIM,,
+ KeyWords3 Based,Rit,Hex,Asm,Dump,Text,Bin,Ascii,Xlt,Koi,ICQ,Pack,Unpack,AIM,,
  KeyWords5 KeyWords5,IDE,SCSI,LFN,cr,lf,crlf,RealName,CacheType,sfn,description,fullname,xfs,btrfs,GUID,
  KeyWords6 KeyWords6,PgUp,PgDn,Home,Del,Ins,BackSp,Backspace,End,Esc,Enter,Grayplus,Minus,Tilda,Space,Caps,Lock,Begin,Up,Down,delete,insert,Tab,Alt,Ctrl,Shift,error
- KeyWords6 highload,stop,start,false,true
+ KeyWords6 highload,stop,start,false,true,
  KeyWords7 KeyWords7,Ext,result,
  KeyWords8 KeyWords8,Origin,etc,
  KeyWords8 USER,PASS,ACCT,CWD,CDUP,SMNT,QUIT,REIN,PORT,PASV,TYPE,STRU,MODE,RETR,STOR,STOU,APPE,EHLO,RSET,DATA
@@ -2320,12 +2320,13 @@ FILES *.txt;*.faq;*.*;*.php
  KeyWords Color white ■,
  Keywords color yellow/brown Golden
  KeyWords Color Lightcyan Reply-To:,From:,From,
- KeyWords Color white/lightred инфицирован,вирус,возможно,Moderator,
+ KeyWords Color white/lightred инфицирован,вирус,возможно,Moderator,SenderFilterConfig,virus
  KeyWords Color lightred доступ,файлу,запрещен,удален
- KeyWords Color lightred ошибка
+ KeyWords Color lightred ошибка,haredirectfail
+ KeyWords Color lightred F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,
  KeyWords Color lightred FS,LOTOS,M1SERVER11,M1SERVER2,M1SERVER3,M1SERVER4,M1SERVER5,M1SERVER7,M1SERVER8,MERITON,MSERVIS,PROXY,m1server,m1server1,m1server6,M1SERVER10,mservis,mregion
 
- RegKeyWords Color white/lightred viru[a-я_-]*
+; RegKeyWords Color white/lightred viru[a-я_-]*
  RegKeyWords Color LightMagenta fat(\d{2})?,ntfs,
 ; RegKeyWords3 win(dow(s)?)?(\x27|\x20)?(\d+X?)?(xp)?(nt)?(me)?(\x2e11)?,
  RegKeyWords3 ((dot|asp)|(\.))+net
@@ -2354,7 +2355,7 @@ FILES *.txt;*.faq;*.*;*.php
  RegKeyWords Color cyan    [_a-ў-\d*]+\x2e\*?(pas|cpp|bas)(\x20|\;|\,|$)+
 ;//END Highlite files and extensions like in my HGROUPS.INI
  RegKeyWords6 (Alt|Ctrl|Shift)((\x2d|\x2b).(\x20|$|\x2e|\x2c))+
- RegKeyWords6 F(1+[012]?|[2-9]),
+; RegKeyWords6 F(1+[012]?|[2-9]),
  RegKeyWords6 [^\x20\x3c;,]+\x3e+.
  RegKeyWords7 [^\x20\x3c;,]+\x3c+.
  RegKeyWords Color lightGreen [\<]+
