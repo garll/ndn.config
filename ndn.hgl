@@ -1415,8 +1415,10 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   KeyWords6 clear,of,case,destructor,constructor,object,item,exit,initialization,finalization,
   KeyWords7 lines,sql,text,caption,items,AsString,filename,result,
   KeyWords8 and,not,or,Goto,init,fail
-
-  keywords color blue bfdefault
+  keywords color lightblue hhMarker
+  keywords color blue bfdefault,hhColorMod
+  keywords color lightcyan hhSelected
+  
   RegKeyWords4 \@[^\x20\,\{)]+
 ; bad style code formatting highlite
 ;  RegKeyWords Color black/red \x20(\,|\;)

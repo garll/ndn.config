@@ -245,6 +245,7 @@ rem  <=!.dif
  >2 ~d~iff.exe "!.!"(new) и "$.$"(old) >>!.patch
  E:\ndn\source\tools\diff.exe -urN -w $:$~\$.$ !:!~\!.!  >> !.patch
  >2 Сравнить k~D~iff'ом
- start "" "C:\program files\TortoiseHg\lib\kdiff3.exe" "!:!~\!.!" "$:$~\$.$"
+ start "" "C:\Program Files\KDiff3\kdiff3.exe" "!:!~\!.!" "$:$~\$.$"
+  
 
 
