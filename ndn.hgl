@@ -1748,6 +1748,7 @@ FILES *.url
  KeyWords2 [InternetShortcut],http://www,[DEFAULT],[CeQuadrat]
  KeyWords3 IDList,
  KeyWords6 HotKey
+ keywords color blue IconFile
  RegKeyWords Color lightblue http:.*,ftp:.*,[^\x20\.]*@[^\x20]*,www\..*
 end
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
