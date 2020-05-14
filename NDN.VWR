@@ -1,15 +1,9 @@
 ; Alt-F3
 
-
 ;----- DisAsembler -----
 ;exe : Qview ~!.!~
-exe : exeinfo.exe !:!~\~!.!~
-#xe : exeinfo.exe !:!~\~!.!~
 
-dll : Qview ~!.!~
 mp3 : tag2txt ~!.!~
-
-pdf : gettext ~!.!~ "!.txt"
 
 ;---------------
 ans : ansview.exe ~!.!~
@@ -17,5 +11,4 @@ s   : ansview.exe ~!.!~
 nfo : ansiroll.exe ~!.!~
 
 ;---------------
-doc : aword.bat -m c:\dos\cp866.txt ~!.! > ~!.txt
 jar: jadgen "!:!\!.!"
