@@ -7,9 +7,10 @@
 ;
 ; Example:
 ;
- [pas,inc]
-.;../;../../;
+ [PAS,pas,inc]
+.,../,../../,.\arcs\,.\incvpc,.\incnvp,.\incxxx,.\microed
+
 ; *c:\bp\inc\;c:\my\src
 ; i:\bp\inc\
 [pp,PP]
-.;../;
+.,../,

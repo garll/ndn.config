@@ -179,6 +179,8 @@ uha {@uharcd.exe l !.! *.*
      Pause}
 7z  {@7z.exe l !.!
      pause}
+dll {@7z.exe l !.!
+     pause}
 ;z{ gzip -l !.!}
 
 
@@ -2130,12 +2132,12 @@ start "" "!:!\!.!"
 cd !:!\
 E:\ndn\source\tools\patch.exe !.pas -p1 --ignore-whitespace <!.!}
 
-* {
-echo off
-IF "%OS%" == "Windows_NT" GOTO w32
-start "!:!\!.!"
-goto end
-:w32
-start "" "!:!\!.!"
-:end
-}
+REM* {
+REMecho off
+REMIF "%OS%" == "Windows_NT" GOTO w32
+REMstart "!:!\!.!"
+REMgoto end
+REM:w32
+REMstart "" "!:!\!.!"
+REM:end
+REM}

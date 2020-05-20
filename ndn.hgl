@@ -311,7 +311,7 @@ END
 ;════════════════════════════════════════════───────────────────────────────
 ;Necromancer Dos Navigator configuration
 FILES ndn.spf
-  CommentString ;
+  CommentStart ;
   RegKeyWords color white ;\s1*(\+|\*)?,^\s*(\+|\*)
   RegKeyWords color red ^\s*\[[^\[\]\\/\*\:\?\"\<\>\.]+\]
 END
@@ -2300,17 +2300,18 @@ END
 ; Text file and any Others
 FILES *.txt;*.faq;*.*;*.php
 
- KeyWords1 KeyWords1,Freeware,password,caption,left,right,open,close,IP,IAC,RCPT,
+ KeyWords1 KeyWords1,Freeware,password,caption,left,right,open,close,IP,IAC,RCPT,KSMG:
  KeyWords2 KeyWords2,Area,Msg,Date,Read,Replied,Mark,copy,move,cut,paste,clipboard,
  KeyWords3 KeyWords3,RegKeyWords,KeyWords,Necromancer,Dos,Navigator,Dn,ndn,unix,linux,os/2,Macintosh,amiga,apple,ReactOS,freebsd,,
  KeyWords3 VMware,vcentre,docker,ansible,OS2,DOS,QNX,windows
  KeyWords3 TileRLeft,TileRTop,TileRRight,TileRBottom,Recipient,sender
  KeyWords3 дос,навигатор,Millennium,Edition,Xp,BeOS,ATARI,menuet,meos,menuetos,d32,w9x,w32,lnx,mda,
  KeyWords3 Based,Rit,Hex,Asm,Dump,Text,Bin,Ascii,Xlt,Koi,ICQ,Pack,Unpack,AIM,,
+ KeyWords3 rules= 
  KeyWords5 KeyWords5,IDE,SCSI,LFN,cr,lf,crlf,RealName,CacheType,sfn,description,fullname,xfs,btrfs,GUID,
  KeyWords6 KeyWords6,PgUp,PgDn,Home,Del,Ins,BackSp,Backspace,End,Esc,Enter,Grayplus,Minus,Tilda,Space,Caps,Lock,Begin,Up,Down,delete,insert,Tab,Alt,Ctrl,Shift,error
  KeyWords6 highload,stop,start,false,true,
- KeyWords7 KeyWords7,Ext,result,
+ KeyWords7 KeyWords7,Ext,result,clean:,
  KeyWords8 KeyWords8,Origin,etc,
  KeyWords8 USER,PASS,ACCT,CWD,CDUP,SMNT,QUIT,REIN,PORT,PASV,TYPE,STRU,MODE,RETR,STOR,STOU,APPE,EHLO,RSET,DATA
  KeyWords8 ALLO,REST,RNFR,RNTO,ABOR,DELE,RMD,MKD,PWD,LIST,NLST,SITE,SYST,STAT,HELP,NOOP,FEAT,
@@ -2323,7 +2324,7 @@ FILES *.txt;*.faq;*.*;*.php
  KeyWords Color white ■,
  Keywords color yellow/brown Golden
  KeyWords Color Lightcyan Reply-To:,From:,From,
- KeyWords Color white/lightred инфицирован,вирус,возможно,Moderator,SenderFilterConfig,virus
+ KeyWords Color white/lightred инфицирован,вирус,возможно,Moderator,SenderFilterConfig,virus,
  KeyWords Color lightred доступ,файлу,запрещен,удален
  KeyWords Color lightred ошибка,haredirectfail
  KeyWords Color lightred F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,
