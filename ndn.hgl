@@ -1391,6 +1391,13 @@ END
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; ” ฉซ๋  แแช ซ๏/ํซไจ (ฎข ๏ เฅค ชๆจ๏) * pascal/Delphi (New Edition)
+FILES *.ps1
+  CommentString #
+  RegKeyWords3 \$[^\x20\,]+
+END
+
+;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+; ” ฉซ๋  แแช ซ๏/ํซไจ (ฎข ๏ เฅค ชๆจ๏) * pascal/Delphi (New Edition)
 FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   BracketPairs object;record;dialog;begin;case;asm;try;item end ifdef;ifndef endif repeat until if then while;for;with do then;case else for;repeat;while break for to;downto procedure;function;constructor;destructor begin;var interface implementation
   KeyWords Color Brown absolute,inherited,ifndef,undef,
