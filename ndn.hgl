@@ -1757,6 +1757,7 @@ END
 FILES *.url
  KeyWords1 URL,=,Modified,baseurl,description
  KeyWords2 [InternetShortcut],http://www,[DEFAULT],[CeQuadrat]
+ KeyWords4 IconIndex 
  KeyWords3 IDList,
  KeyWords6 HotKey
  keywords color blue IconFile
