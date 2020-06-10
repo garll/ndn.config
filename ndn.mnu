@@ -2,6 +2,8 @@
 icacls "!:!\!.!"
 >1 dir "!.!" /q
 dir "!:!\!.!" /q
+>1 powershell gwmi win32_volume
+powershell gwmi win32_volume  
 >1
 >1 Системные (Systems)
  >2 Управление компьютером (Computer Management)
