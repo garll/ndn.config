@@ -2322,7 +2322,7 @@ FILES *.txt;*.faq;*.*;*.php
  KeyWords3 Based,Rit,Hex,Asm,Dump,Text,Bin,Ascii,Xlt,Koi,ICQ,Pack,Unpack,AIM,,
  KeyWords3 rules= 
  KeyWords5 KeyWords5,IDE,SCSI,LFN,cr,lf,crlf,RealName,CacheType,sfn,description,fullname,xfs,btrfs,GUID,
- KeyWords6 KeyWords6,PgUp,PgDn,Home,Del,Ins,BackSp,Backspace,End,Esc,Enter,Grayplus,Minus,Tilda,Space,Caps,Lock,Begin,Up,Down,delete,insert,Tab,Alt,Ctrl,Shift,error
+ KeyWords6 KeyWords6,PgUp,PgDn,Home,Del,Ins,BackSp,Backspace,End,Esc,Enter,Grayplus,Minus,Tilda,Space,Caps,Lock,Begin,Up,Down,delete,insert,Tab,Alt,Ctrl,Shift,error,
  KeyWords6 highload,stop,start,false,true,
  KeyWords7 KeyWords7,Ext,result,clean:,
  KeyWords8 KeyWords8,Origin,etc,
@@ -2350,6 +2350,7 @@ FILES *.txt;*.faq;*.*;*.php
  RegKeyWords3 ~[^~\x5c\x21]+~, \x20(((s(uper)?)?v)|[ec])+ga,DPMI(32)?
  RegKeyWords3 [³-Ú]+
  RegKeyWords3 Subj(ect)?,IBM(\x20)?(((pc\x2f?)|(xt\x2f?)|(at\x2f?))+)?
+ RegKeyWords7 no\x20error,
  RegKeyWords Color Lightcyan (http|ftp)[a-z]?:[^\x20:>"]+,www\.[^\x20]+,[a-z_\d]+@[a-z_\d]+\x2e[a-z\d]+
  RegKeyWords Color Lightcyan www\.[^\x20]+
  RegKeyWords Color Lightcyan [-a-z_\d]+@[-a-z_\d\x2e]+[-a-z\d]+
