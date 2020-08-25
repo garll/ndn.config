@@ -2307,6 +2307,24 @@ FILES *.yml;*.yaml
  RegKeyWords color black \{\{[^\x7d]+\x7d\}
 
 END
+;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+; vyatta config file
+FILES *.boot
+ STRINGFLAGS 8
+ ColorKeyWords yes
+ SwitchHighLight on
+ keywords1 address,port,established,related,invalid,match-ipsec,network,count,time,network-group,port-group,inbound-interface,protocol,action,description,
+ keywords2 enable,accept
+ keywords3 udp,tcp,gre,tcp_udp,domain,snmp,ssh,ftp,http,https,ntp,icmp,vpn,dns,
+ keywords4 firewall
+ keywords5 name
+ keywords6 disable,drop,reject,exclude
+ keywords7 destination,source,state,ipsec,default-action,recent,nat,interfaces,ethernet,loopback,translation,group,
+ Comment /* */
+
+ RegKeyWords color lightblue rule([^{])+
+ 
+END
 
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
