@@ -2313,17 +2313,22 @@ FILES *.boot
  STRINGFLAGS 8
  ColorKeyWords yes
  SwitchHighLight on
- keywords1 address,port,established,related,invalid,match-ipsec,network,count,time,network-group,port-group,inbound-interface,protocol,action,description,
+ keywords1 address,port,established,related,invalid,match-ipsec,network,count,time,network-group,port-group,inbound-interface,protocol,action,description,interface,level,duplex,hw-id,outbound-interface,gateway-address,encryption,hash,interval,timeout,
+ keywords1 authorization,name-server
  keywords2 enable,accept
- keywords3 udp,tcp,gre,tcp_udp,domain,snmp,ssh,ftp,http,https,ntp,icmp,vpn,dns,
+ keywords3 udp,tcp,gre,tcp_udp,domain,snmp,ssh,ftp,http,https,ntp,icmp,vpn,dns,zone,from,admin,auto,eth0,eth1,aes256,sha256,ro,
  keywords4 firewall
- keywords5 name
+ keywords5 host-name
  keywords6 disable,drop,reject,exclude
- keywords7 destination,source,state,ipsec,default-action,recent,nat,interfaces,ethernet,loopback,translation,group,
+ keywords7 destination,source,state,ipsec,default-action,recent,nat,interfaces,ethernet,loopback,translation,group,service,system,forwarding,package,syslog,console,login,zone-policy,remote,authentication,speed,device,tunnel
+ keywords7 communitynfr 
+ keywords8 encrypted-password,plaintext-password
  Comment /* */
 
- RegKeyWords color lightblue rule([^{])+
- 
+ RegKeyWords color blue rule([^{])+
+ RegKeyWords5 name\x20([^{])+
+ KeyWords color cyan masquerade
+                 
 END
 
 
