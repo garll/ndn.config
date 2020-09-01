@@ -2308,6 +2308,27 @@ FILES *.yml;*.yaml
 
 END
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+; cisco config file
+FILES *.conf
+ STRINGFLAGS 8
+ ColorKeyWords yes
+ SwitchHighLight on
+ keywords1 ip,address,host,interface,
+ keywords1 transport,protocol,extendable,
+ keywords2 enable,accept,outside,inside,match,
+ keywords3 udp,tcp,gre,tcp_udp,domain,snmp,ssh,ftp,http,https,ntp,icmp,vpn,dns,zone,from,admin,auto,eth0,eth1,aes256,sha256,ro,any,nat,encapsulation
+ keywords4 firewall,
+ keywords5 host-name,secret,password,username,privilege,,
+ keywords6 disable,drop,reject,exclude,shutdown,blocked-content,
+ keywords7 permit,
+ keywords8 encrypted-password,plaintext-password,
+ CommentStart !
+ RegKeyWords color lightmagenta description([^{])+
+
+                 
+END
+
+;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; vyatta config file
 FILES *.boot
  STRINGFLAGS 8
