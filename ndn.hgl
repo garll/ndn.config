@@ -1391,14 +1391,16 @@ FILES *.prg;*.qpr;*.sql
 END
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
-; ” ฉซ๋  แแช ซ๏/ํซไจ (ฎข ๏ เฅค ชๆจ๏) * pascal/Delphi (New Edition)
+; ” ฉซ๋ PowerShell
 FILES *.ps1
   CommentString #
   BracketPairs if else
   keywords6 if,else
-  RegKeyWords8 (\x20-)[^\x20]+
+  
   RegKeyWords3 \$[a-z]+
   RegKeyWords7 \.[a-z]+
+  
+  RegKeyWords Color Lightcyan [^\x20]+@[^\x20]+
 END
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
