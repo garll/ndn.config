@@ -2,6 +2,7 @@
 icacls "!:!\!.!"
 >1 dir "!.!" /q
 dir "!:!\!.!" /q
+>1
 >1 powershell gwmi win32_volume
 powershell gwmi win32_volume  
 >1
