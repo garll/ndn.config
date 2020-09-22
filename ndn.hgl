@@ -1428,7 +1428,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   KeyWords6 then,else,if,idok,SubMenu,continue,in
   KeyWords6 clear,of,case,destructor,constructor,object,item,exit,initialization,finalization,
   KeyWords7 lines,sql,text,caption,items,AsString,filename,result,
-  KeyWords8 and,not,or,Goto,init,fail
+  KeyWords8 and,not,or,Goto,init,fail,xor
   keywords color lightblue hhMarker
   keywords color blue bfdefault,hhColorMod
   keywords color lightcyan hhSelected
