@@ -76,7 +76,7 @@ FILES *.htx;*.dnl;*.dnr;
   KeyWords2 topic,STATICTEXT
   KeyWords3 RadioButtons,RadioButtonsE,CheckBoxes,CheckBoxesE,ColorGroup,ColorItem,SCROLLBAR,ListBox,ListBoxE,Label,
   KeyWords3 MouseSCROLLBAR,IntInputLine,InputLine,CommonRect,DriveCheckBoxes,end,UpperTable,HEXLINE,ComboBox,BUTTON,CheckedComboBox,
-  KeyWords color blue  ofFramed,bfDefault,ofSecurity
+  KeyWords color blue  ofFramed,bfDefault,ofSecurity,ofVScrollBar
   KeyWords4 statusdef,HELPCTX,HISTORY
   KeyWords5 ParamText,
   KeyWords6 SubMenu,kbNoKey,SWITCHVIEW,MULTIDIALOG,SUBGROUP,selectback,SELECTFORWARD
@@ -1536,6 +1536,9 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
     Print {같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�}
     Home
   EndMacro
+  Macro 8
+    Print {$ENDIF
+  EndMacro  
   Macro 9
     InsLine
     Home
