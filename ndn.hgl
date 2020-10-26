@@ -1173,7 +1173,7 @@ END;
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; Configuration files / ฎญไจฃใเ ๆจฎญญ๋ฅ ไ ฉซ๋
 ;ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
-FILES *.cfg;*.qw;*.conf
+FILES *.cfg;*.qw
   CommentStart  ;,#,$,%
   CommentString //
   GeneralFLAGS   14
@@ -1396,10 +1396,10 @@ FILES *.ps1
   CommentString #
   BracketPairs if else
   keywords6 if,else
-  
+
   RegKeyWords3 \$[a-z]+
   RegKeyWords7 \.[a-z]+
-  
+
   RegKeyWords Color Lightcyan [^\x20]+@[^\x20]+
 END
 
@@ -1432,7 +1432,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   keywords color lightblue hhMarker
   keywords color blue bfdefault,hhColorMod
   keywords color lightcyan hhSelected
-  
+
   RegKeyWords4 \@[^\x20\,\{)]+
 ; bad style code formatting highlite
 ;  RegKeyWords Color black/red \x20(\,|\;)
@@ -1538,7 +1538,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   EndMacro
   Macro 8
     Print {$ENDIF
-  EndMacro  
+  EndMacro
   Macro 9
     InsLine
     Home
@@ -1763,7 +1763,7 @@ END
 FILES *.url
  KeyWords1 URL,=,Modified,baseurl,description
  KeyWords2 [InternetShortcut],http://www,[DEFAULT],[CeQuadrat]
- KeyWords4 IconIndex 
+ KeyWords4 IconIndex
  KeyWords3 IDList,
  KeyWords6 HotKey
  keywords color blue IconFile
@@ -2321,16 +2321,19 @@ FILES *.conf
  keywords1 ip,address,host,interface,license,
  keywords1 transport,protocol,extendable,
  keywords2 enable,accept,outside,inside,match,
- keywords3 udp,tcp,gre,tcp_udp,domain,snmp,ssh,ftp,http,https,ntp,icmp,vpn,dns,zone,from,admin,auto,eth0,eth1,aes256,sha256,ro,any,nat,encapsulation
+ keywords3 udp,tcp,gre,tcp_udp,domain,snmp,ssh,ftp,http,https,ntp,icmp,vpn,dns,zone,from,admin,auto,eth0,eth1,aes256,sha256,ro,any,nat,encapsulation,channel-group,
  keywords4 firewall,
- keywords5 host-name,secret,password,username,privilege,,
+ keywords5 host-name,secret,password,username,privilege,
  keywords6 disable,drop,reject,exclude,shutdown,blocked-content,
  keywords7 permit,
  keywords8 encrypted-password,plaintext-password,
+ keywords color blue voice,
  CommentStart !
  RegKeyWords color lightmagenta description([^{])+
 
-                 
+ KeyWords3 access
+
+
 END
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
@@ -2339,22 +2342,23 @@ FILES *.boot
  STRINGFLAGS 8
  ColorKeyWords yes
  SwitchHighLight on
- keywords1 address,port,established,related,invalid,match-ipsec,network,count,time,network-group,port-group,inbound-interface,protocol,action,description,interface,level,duplex,hw-id,outbound-interface,gateway-address,encryption,hash,interval,timeout,
- keywords1 authorization,name-server
- keywords2 enable,accept
+ keywords1 address,port,established,related,invalid,match-ipsec,network,count,time,network-group,port-group,inbound-interface,protocol,action,interface,level,duplex,hw-id,outbound-interface,gateway-address,encryption,hash,interval,timeout,
+ keywords1 authorization,name-server,
+ keywords2 enable,accept,access,allowed,
  keywords3 udp,tcp,gre,tcp_udp,domain,snmp,ssh,ftp,http,https,ntp,icmp,vpn,dns,zone,from,admin,auto,eth0,eth1,aes256,sha256,ro,
- keywords4 firewall
- keywords5 host-name
- keywords6 disable,drop,reject,exclude
+ keywords4 firewall,
+ keywords5 host-name,switchport,
+ keywords6 disable,drop,reject,exclude,
  keywords7 destination,source,state,ipsec,default-action,recent,nat,interfaces,ethernet,loopback,translation,group,service,system,forwarding,package,syslog,console,login,zone-policy,remote,authentication,speed,device,tunnel
- keywords7 communitynfr 
- keywords8 encrypted-password,plaintext-password
+ keywords7 communitynfr,description,
+ keywords8 encrypted-password,plaintext-password,
  Comment /* */
 
+ regkeywords8 GigabitEthernet
  RegKeyWords color blue rule([^{])+
  RegKeyWords5 name\x20([^{])+
  KeyWords color cyan masquerade
-                 
+
 END
 
 
@@ -2369,7 +2373,7 @@ FILES *.txt;*.faq;*.*;*.php
  KeyWords3 TileRLeft,TileRTop,TileRRight,TileRBottom,Recipient,sender
  KeyWords3 คฎแ,ญ ขจฃ โฎเ,Millennium,Edition,Xp,BeOS,ATARI,menuet,meos,menuetos,d32,w9x,w32,lnx,mda,
  KeyWords3 Based,Rit,Hex,Asm,Dump,Text,Bin,Ascii,Xlt,Koi,ICQ,Pack,Unpack,AIM,,
- KeyWords3 rules= 
+ KeyWords3 rules=
  KeyWords5 KeyWords5,IDE,SCSI,LFN,cr,lf,crlf,RealName,CacheType,sfn,description,fullname,xfs,btrfs,GUID,
  KeyWords6 KeyWords6,PgUp,PgDn,Home,Del,Ins,BackSp,Backspace,End,Esc,Enter,Grayplus,Minus,Tilda,Space,Caps,Lock,Begin,Up,Down,delete,insert,Tab,Alt,Ctrl,Shift,error,
  KeyWords6 highload,stop,start,false,true,
