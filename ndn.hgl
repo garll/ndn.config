@@ -1423,11 +1423,11 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   KeyWords4 DateTime,DWord,PChar,ShortString,SmallWord,smallint,AnsiString,TInputLine,TComboBox,TDriveType,lfile,ValSInt,ValIInt,
   KeyWords4 TObject,TField,set,EventTimer,TQuad,THandle,PView,PFilesCollection,PMyScrollBar,THideView,PHideView,TFPFilter,PDrive,TPoint,TQuickSearchData,TStream,PButton,TTextListBoxRec,TListViewer,
   KeyWords4 TMemoryStatus,TEvent,TView,TCollection,TGroup,PDialog,Trect,PString,PFileRec,PDirStorage,PSortedCollection,TSwapLevel,PStream,TStoredFile,TListBox,PCollection,PLabel,PInputLine,PWhileView,PStaticText,
-  KeyWords4 true,false,pguid,longbool,TGUID,uInt,LONG,cardinal,WCHAR,LongWord,QWord,Unicodestring,WideString,PWideChar
+  KeyWords4 true,false,pguid,longbool,TGUID,uInt,LONG,cardinal,WCHAR,LongWord,QWord,Unicodestring,WideString,PWideChar,TCheckBoxes,
   KeyWords4 IPortableDeviceValues,TPropertyKey,iunknown,TPropVariant,PPWideChar,IStream,IPortableDeviceManager,IPortableDevice,
   KeyWords4 IPortableDeviceKeyCollection,IPortableDeviceProperties,ISequentialStream,IPortableDeviceContent,IEnumPortableDeviceObjectIDs,
   KeyWords5 implementation,interface,type,program,uses,var,const,procedure,function,unit,cm.*,property
-  KeyWords6 then,else,if,idok,SubMenu,continue,in
+  KeyWords6 then,else,if,idok,SubMenu,continue,in,override
   KeyWords6 clear,of,case,destructor,constructor,object,item,exit,initialization,finalization,out
   KeyWords7 lines,sql,text,caption,items,AsString,filename,result,ctPt
   KeyWords8 and,not,or,Goto,init,fail,
@@ -1518,10 +1518,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
     MoveUp
   EndMacro
   Macro 4
-    Print '{AH '
-    Insertdate
-    Print ' }'
-    MoveLeft
+    Print '{$IFDEF VP'
   EndMacro
   Macro 5
     InsLine
@@ -2325,11 +2322,11 @@ FILES *.conf
  SwitchHighLight on
  keywords1 ip,address,host,interface,license,
  keywords1 transport,protocol,extendable,
- keywords2 enable,accept,outside,inside,match,
+ keywords2 enable,accept,outside,inside,match,eq
  keywords3 udp,tcp,gre,tcp_udp,domain,snmp,ssh,ftp,http,https,ntp,icmp,vpn,dns,zone,from,admin,auto,eth0,eth1,aes256,sha256,ro,any,nat,encapsulation,channel-group,
  keywords4 firewall,
  keywords5 host-name,secret,password,username,privilege,
- keywords6 disable,drop,reject,exclude,shutdown,blocked-content,
+ keywords6 disable,drop,reject,exclude,shutdown,blocked-content,deny
  keywords7 permit,
  keywords8 encrypted-password,plaintext-password,
  keywords color blue voice,
