@@ -1436,6 +1436,7 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   keywords color lightblue hhMarker
   keywords color blue bfdefault,hhColorMod
   keywords color lightcyan hhSelected
+  KeyWords color blue dlgWPDCopyDialog
 
   RegKeyWords4 \@[^\x20\,\{)]+
 ; bad style code formatting highlite
@@ -1459,7 +1460,8 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   RegKeyWords Color LightCyan (\d),
   RegKeyWords Color Lightgreen \d+h
   RegKeyWords Color LightMagenta \'[^\']+\',\#\d*
-  RegKeyWords Color yellow write(ln)?,random(ize)?,
+  RegKeyWords Color yellow write(ln)?,random(ize)?
+  RegKeyWords Color Yellow dlg[^\x2c]+\x2c
   RegKeyWords color white SetFileAttributesA
   RegKeyWords Color lightred SetFAttr
   RegKeyWords Color blue lSetFdwAttr,lGetFdwAttr,GetFiledwAttr,setFiledwAttr,GetFilePSsize,lGetLinuxAttr,lSetLinuxAttr,
