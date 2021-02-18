@@ -2341,6 +2341,19 @@ FILES *.conf
 END
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+; Asterisk Log file
+FILES *.pbx
+ STRINGFLAGS 128
+ ColorKeyWords yes
+ SwitchHighLight on
+ RegKeyWords color lightgray \[([^\x5d])+\]
+
+ KeyWords4 GosubIf,GotoIf,Set,macro,Gosub,Goto,hangup,Return,ExecIf,noop,Dial,MixMonitor,NoCDR,System
+ KeyWords3 notice
+ KeyWords6 grep
+END
+
+;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; vyatta config file
 FILES *.boot
  STRINGFLAGS 8
@@ -2506,3 +2519,4 @@ END
 ; 13-Lightmagenta
 ; 14-Yellow
 ; 15-White
+
