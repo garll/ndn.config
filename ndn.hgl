@@ -2348,8 +2348,10 @@ FILES *.pbx
  SwitchHighLight on
  RegKeyWords color lightgray \[([^\x5d])+\]
 
- KeyWords4 GosubIf,GotoIf,Set,macro,Gosub,Goto,hangup,Return,ExecIf,noop,Dial,MixMonitor,NoCDR,System
- KeyWords3 notice
+ KeyWords1 Spawn
+ KeyWords4 GosubIf,GotoIf,Set,macro,Gosub,Goto,hangup,Return,ExecIf,noop,Dial,MixMonitor,NoCDR,System,MacroExit,PlayTones,Wait
+ KeyWords3 notice,disabled
+ KeyWords6 Busy
  KeyWords6 grep
 END
 
@@ -2519,4 +2521,4 @@ END
 ; 13-Lightmagenta
 ; 14-Yellow
 ; 15-White
-
+
