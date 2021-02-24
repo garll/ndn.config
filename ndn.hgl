@@ -1425,14 +1425,14 @@ FILES *.pas;*.res;*.dfm;stdefine.inc;*.pp;rar5.inc
   KeyWords4 TMemoryStatus,TEvent,TView,TCollection,TGroup,PDialog,Trect,PString,PFileRec,PDirStorage,PSortedCollection,TSwapLevel,PStream,TStoredFile,TListBox,PCollection,PLabel,PInputLine,PWhileView,PStaticText,
   KeyWords4 true,false,pguid,longbool,TGUID,uInt,LONG,cardinal,WCHAR,LongWord,QWord,Unicodestring,WideString,PWideChar,TCheckBoxes,
   KeyWords4 IPortableDeviceValues,TPropertyKey,iunknown,TPropVariant,PPWideChar,IStream,IPortableDeviceManager,IPortableDevice,IPortableDeviceResources,
-  KeyWords4 IPortableDeviceKeyCollection,IPortableDeviceProperties,ISequentialStream,IPortableDeviceContent,IEnumPortableDeviceObjectIDs,ISequentialStream,IStream
+  KeyWords4 IPortableDeviceKeyCollection,IPortableDeviceProperties,ISequentialStream,IPortableDeviceContent,IEnumPortableDeviceObjectIDs,ISequentialStream,IStream,IPortableDevicePropVariantCollection
   KeyWords5 implementation,interface,type,program,uses,var,const,procedure,function,unit,cm.*,property
   KeyWords6 then,else,if,idok,SubMenu,continue,in,override
   KeyWords6 clear,of,case,destructor,constructor,object,item,exit,initialization,finalization,out
   KeyWords7 lines,sql,text,caption,items,AsString,filename,result,ctPt
   KeyWords8 and,not,or,Goto,init,fail,
   KeyWords color blue VTPortableDeviceValues,VTPortableDeviceKeyCollection,VTPortableDeviceProperties,VTEnumPortableDeviceObjectIDs,VTPortableDeviceManager,VTPortableDevice
-  KeyWords color blue VTPortableDeviceContent,VTPortableDeviceResources,VTSequentialStream,VTStream
+  KeyWords color blue VTPortableDeviceContent,VTPortableDeviceResources,VTSequentialStream,VTStream,VTPortableDevicePropVariantCollection
   keywords color lightblue hhMarker
   keywords color blue bfdefault,hhColorMod
   keywords color lightcyan hhSelected
@@ -2348,11 +2348,14 @@ FILES *.pbx
  SwitchHighLight on
  RegKeyWords color lightgray \[([^\x5d])+\]
 
+ RegKeyWords color green ^[|_\\].*
  KeyWords1 Spawn
- KeyWords4 GosubIf,GotoIf,Set,macro,Gosub,Goto,hangup,Return,ExecIf,noop,Dial,MixMonitor,NoCDR,System,MacroExit,PlayTones,Wait
+ KeyWords4 GosubIf,GotoIf,Set,macro,Gosub,Goto,hangup,Return,ExecIf,noop,Dial,MixMonitor,NoCDR,System,MacroExit,PlayTones,Wait,while
  KeyWords3 notice,disabled
- KeyWords6 Busy
+ KeyWords2 DTMF
+ KeyWords6 Busy,Error
  KeyWords6 grep
+ KeyWords7 Answer
 END
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
