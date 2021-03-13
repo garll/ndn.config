@@ -1,6 +1,12 @@
 ;Enter - '{' ¨ '}'
 ;Shift-Enter '(' ¨ ')'
 ;Alt-Enter - '[' ¨ ']'.
+
+
+
+vib {"C:\program files\Veeam\Backup and Replication\Backup\Extract.exe" -dir "!:!\!.!"}
+vbk {"C:\program files\Veeam\Backup and Replication\Backup\Extract.exe" -dir "!:!\!.!"}
+
 c  [    >1 ~B~orland C++ 32Bit
         bcc32 -I"e:\Bcc\include" -L"e:\Bcc\lib" !.!
         >1 ~W~atcom C/C++ 32bit
