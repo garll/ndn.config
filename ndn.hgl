@@ -2405,6 +2405,7 @@ FILES *.txt;*.faq;*.*;*.php
  KeyWords8 KeyWords8,Origin,etc,
  KeyWords8 USER,PASS,ACCT,CWD,CDUP,SMNT,QUIT,REIN,PORT,PASV,TYPE,STRU,MODE,RETR,STOR,STOU,APPE,EHLO,RSET,DATA
  KeyWords8 ALLO,REST,RNFR,RNTO,ABOR,DELE,RMD,MKD,PWD,LIST,NLST,SITE,SYST,STAT,HELP,NOOP,FEAT,
+ KeyWords Color brown vhx,vhdx
 ; 1c keywords
 ;KeyWords6 КонецЕсли,КонецЦикла,Если,Пока,Для,Тогда,Прервать,ИначеЕсли,
  KeyWords Color blue ftp,url,
