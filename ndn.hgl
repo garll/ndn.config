@@ -2385,6 +2385,13 @@ FILES *.boot
 
 END
 
+;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+; Mikrotik backup file
+FILES *.rsc
+ RegKeyWords color blue ^/(.)+
+ CommentStart #
+
+END
 
 ;ออออออออออออออออออออออออออออออออออออออออออออฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
 ; Text file and any Others
