@@ -2390,6 +2390,7 @@ END
 FILES *.rsc
  RegKeyWords color blue ^/(.)+
  CommentStart #
+ RegKeyWords color Lightgreen \x20([^/=])+=
 
 END
 
