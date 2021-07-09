@@ -2351,7 +2351,7 @@ FILES *.pbx
  RegKeyWords color green ^[|_\\].*
  KeyWords1 Spawn
  KeyWords4 GosubIf,GotoIf,Set,macro,Gosub,Goto,hangup,Return,ExecIf,noop,Dial,MixMonitor,NoCDR,System,MacroExit,PlayTones,Wait,while,SIPAddHeader,AGI,
- KeyWords3 notice,disabled,pickup
+ KeyWords3 notice,disabled,pickup,forwarding
  KeyWords2 DTMF,
  KeyWords6 Busy,Error
  KeyWords6 grep
