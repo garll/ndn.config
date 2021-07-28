@@ -1398,6 +1398,7 @@ FILES *.ps1
   keywords6 if,else
 
   RegKeyWords3 \$[a-z]+
+  RegKeyWords4 Import-Module
   RegKeyWords7 \.[a-z]+
 
   RegKeyWords Color Lightcyan [^\x20]+@[^\x20]+
