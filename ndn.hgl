@@ -2327,6 +2327,7 @@ FILES *.conf
  keywords1 transport,protocol,extendable,
  keywords2 enable,accept,outside,inside,match,eq
  keywords3 udp,tcp,gre,tcp_udp,domain,snmp,ssh,ftp,http,https,ntp,icmp,vpn,dns,zone,from,admin,auto,eth0,eth1,aes256,sha256,ro,any,nat,encapsulation,channel-group,
+ keywords3 Goto
  keywords4 firewall,
  keywords5 host-name,secret,password,username,privilege,
  keywords6 disable,drop,reject,exclude,shutdown,blocked-content,deny
@@ -2335,9 +2336,11 @@ FILES *.conf
  keywords color blue voice,
  CommentStart !
  RegKeyWords color lightmagenta description([^{])+
+ RegKeyWords2 \[[^\x5E\]\[\x22\x27\x3D]+\]
+ RegKeyWords5 \$\{[^\x5E\}\{\x22\x27\x3D]+\}
 
  KeyWords3 access
-
+CommentStart ;
 
 END
 
