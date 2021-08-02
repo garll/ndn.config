@@ -2330,9 +2330,10 @@ FILES *.conf
  keywords3 Goto
  keywords4 firewall,
  keywords5 host-name,secret,password,username,privilege,
- keywords6 disable,drop,reject,exclude,shutdown,blocked-content,deny
+ keywords6 disable,drop,reject,exclude,shutdown,blocked-content,deny,
  keywords7 permit,
  keywords8 encrypted-password,plaintext-password,
+ Keywords color red debug,
  keywords color blue voice,
  CommentStart !
  RegKeyWords color lightmagenta description([^{])+
@@ -2340,7 +2341,8 @@ FILES *.conf
  RegKeyWords5 \$\{[^\x5E\}\{\x22\x27\x3D]+\}
 
  KeyWords3 access
-CommentStart ;
+ CommentStart ;
+ CommentString ;
 
 END
 
