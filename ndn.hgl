@@ -469,6 +469,9 @@ FILES config.sys;*.bat;*.col;*.cmd;*.sh;*.d
 ;RegKeyWords1
   RegKeyWords color white ^\s*(echoconfig|ntcmdpropt|dosonly|emm\s*(?==))
 
+  RegKeyWords color lightgreen \${[^\x20]+}
+  RegKeyWords color lightred \$[^\x20]+
+
   KeyWords1 copy,echo,echo.,@echo,cls,include,xcopy,robocopy
   KeyWords1 prompt,path,bat,com,exe,
   KeyWords1 z,device,devicehight,tmp,temp,md,
