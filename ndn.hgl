@@ -2344,8 +2344,8 @@ FILES *.conf
  RegKeyWords5 \$\{[^\x5E\}\{\x22\x27\x3D]+\}
 
  KeyWords3 access
- CommentStart ;
- CommentString ;
+ CommentStart ;,#
+ CommentString ;,#
 
 END
 
