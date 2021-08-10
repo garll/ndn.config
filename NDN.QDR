@@ -37,3 +37,9 @@
 ; Windows 9x
 ?%WinDir%
 ?%WinBootDir%
+
+; Linux
+?/etc
+?/proc/self/
+?~
+?$HOME
