@@ -2438,6 +2438,8 @@ FILES *.txt;*.faq;*.*;*.php
  KeyWords Color lightred F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,
  KeyWords Color lightred FS,LOTOS,M1SERVER11,M1SERVER2,M1SERVER3,M1SERVER4,M1SERVER5,M1SERVER7,M1SERVER8,MERITON,MSERVIS,PROXY,m1server,m1server1,m1server6,M1SERVER10,mservis,mregion
 
+ RegKeyWords color red failed\x20chap\x20authentication,
+
 ; RegKeyWords Color white/lightred viru[a-ï_-]*
  RegKeyWords Color LightMagenta fat(\d{2})?,ntfs,
 ; RegKeyWords3 win(dow(s)?)?(\x27|\x20)?(\d+X?)?(xp)?(nt)?(me)?(\x2e11)?,

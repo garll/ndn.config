@@ -30,6 +30,7 @@
 ?%HomeDrive%%HomePath%
 ?%APPDATA%
 ?%UserProfile%
+
 ; Language specific
 ?%UserProfile%\Eigene Dateien\
 ?%UserProfile%\My Documents\
@@ -43,3 +44,4 @@
 ?/proc/self/
 ?~
 ?$HOME
+?/var/logs
