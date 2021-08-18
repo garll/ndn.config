@@ -44,4 +44,5 @@
 ?/proc/self/
 ?~
 ?$HOME
-?/var/logs
+?/var/log * Logs
+?/etc/systemd/system/multi-user.target.wants * Startup
